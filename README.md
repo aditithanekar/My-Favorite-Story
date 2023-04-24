@@ -11,11 +11,11 @@ We will be coding this project in C++ using the VSCode IDE. This project will in
 The project will take in user input by asking for keyboard input through std::cin. This means that the user will be presented with choices in the terminal, and asked to press keys on their keyboard to select a choice. The output of this project will consist of terminal based graphics (ASCII graphics), as well as text output in the terminal. We also plan to include audio based output, such as sound effects when a certain choice is made. 
 
 Some features we plan on providing include:
-*All storylines are text-based adventure style
-*Audio based on the genre you choose, including sound effects
-*ASCII graphics in the terminal- simple graphic “cutscenes”
-*Options based on choosing a character and genre
-*Different storyline and adventure based on character, genre, and choices
+* All storylines are text-based adventure style
+* Audio based on the genre you choose, including sound effects
+* ASCII graphics in the terminal- simple graphic “cutscenes”
+* Options based on choosing a character and genre
+* Different storyline and adventure based on character, genre, and choices
 
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
