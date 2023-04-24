@@ -1,17 +1,22 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10872349&assignment_repo_type=AssignmentRepo)
-# \<Project title\>
+# \My Favorite Story\
  
 Authors: [Khushi Chaudhari](https://github.com/khushi-04), [Aditi Thanekar](https://github.com/aditithanekar), [Ray Wong](https://github.com/xwRongx), [Sarah Pun](https://github.com/sarahpun)
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- > * What will be the input/output of your project?
- > * What are the features that the project provides?
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board using GitHub projects (board view). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added.
+Our concept for this project is that we want to create a RPG based on genre, giving the user the choice to live out their favorite storyline, whether that’s romance, horror, or comedy. We wanted to do a project that would be entertaining for us and for those who utilize it. It allows us to be creative artistically and technically. Many of us grew up playing role-playing games, and still do to this day. Because of all the influence from the world and technology around us, coming up with a concept that would be fun was entertaining in itself, and it allowed us to feel like we were kids again. Our goal with this project is to be able to recreate our memories and childhood with a RPG of our own!
+
+We will be coding this project in C++ using the VSCode IDE. This project will include audio cues and effects alongside the terminal based gameplay. 
+
+The project will take in user input by asking for keyboard input through std::cin. This means that the user will be presented with choices in the terminal, and asked to press keys on their keyboard to select a choice. The output of this project will consist of terminal based graphics (ASCII graphics), as well as text output in the terminal. We also plan to include audio based output, such as sound effects when a certain choice is made. 
+
+Some features we plan on providing include:
+*All storylines are text-based adventure style
+*Audio based on the genre you choose, including sound effects
+*ASCII graphics in the terminal- simple graphic “cutscenes”
+*Options based on choosing a character and genre
+*Different storyline and adventure based on character, genre, and choices
+
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
  > * Create an "Epic" (note) for each feature. Place these epics in the `Product Backlog` column
