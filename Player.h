@@ -9,11 +9,11 @@ class Player
     public:
         Player();
         Player(string inputName);
-        virtual void getHappy()=0;
-        virtual void getSad()=0;
-        virtual void getSurprised()=0;
-        virtual void getDistressed()=0;
-        virtual void getLonely()=0;
-        virtual void getFear()=0;
+        virtual string getHappy()=0;
+        virtual string getSad()=0;
+        virtual string getSurprised()=0;
+        virtual string getDistressed()=0;
+        virtual string getLonely()=0;
+        virtual string getFear()=0;
         
 };
