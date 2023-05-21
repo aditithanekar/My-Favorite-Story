@@ -4,7 +4,10 @@
 
 using namespace std;
 
-
+Scene::Scene(){
+    textIndex = 0;
+    totalTexts = 0;
+}
 Scene::Scene(string fileName){
     
     textIndex = 0;

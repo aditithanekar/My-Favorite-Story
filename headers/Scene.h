@@ -7,11 +7,11 @@ using namespace std;
 
 class Scene {
 private:
-    string graphics;
     int textIndex; //current index in text array
     int totalTexts; //total number of texts in array
     string text[10];
 public:
+    Scene();
     Scene(string fileName);
     ~Scene();
 

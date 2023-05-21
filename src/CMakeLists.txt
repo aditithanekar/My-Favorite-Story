@@ -1,5 +1,8 @@
 
 add_library(simpleLibrary
+  Genre.cpp
+  OutputText.cpp 
+  Player.cpp
   Scene.cpp
 )
 

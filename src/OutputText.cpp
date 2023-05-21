@@ -1,4 +1,4 @@
-#include "OutputText.h"
+#include "../headers/OutputText.h"
 
 #include <iostream>
 #include <string>
