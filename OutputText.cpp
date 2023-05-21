@@ -12,10 +12,6 @@ using namespace std;
 
  }
 
-string OutputText::getText(){
-    return text;
-}
-
 void OutputText::printingText(const string& text, int delay_ms){
     for (char c : text) {
         cout << c << flush; // Print character without buffering

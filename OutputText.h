@@ -11,7 +11,6 @@ class OutputText{
         string text;
     public:
         OutputText();
-        string getText();
         void printingText(const string& text, int delay_ms);
 };
 
