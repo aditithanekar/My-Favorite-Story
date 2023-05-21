@@ -27,7 +27,7 @@ Click [here](https://docs.google.com/document/d/1xZE690FOioJzWJGLKPGApxL3kFQgQ7R
 
 ## Class Diagram
 This is a UML class diagram describing our abstract Genre and Player classes as well as our Scene and Sound Effects main classes. The inherited classes of the Genre are the Horror and RomCom classes and the inherited classes of the Player are our two characters names Vanilla and Mint.
-> <img src="uml2.png" alt="UMLdiag" width="900">
+> <img src="umlnew.drawio.png" alt="UMLdiag" width="900">
  
 ### SOLID Principles
 * Single Responsibility: We created new classes called the outputText and inputText. These are now in charge of printing and taking in text respectfully, instead of the Scene class doing so. This makes it so the Scene class only has a single responsibility instead of three. This change helped us write better code because it divided up the general task of outputting and inputting text into their own interfaces rather than redundantly implementing them for each Genre class. This way, it can be used by all the other classes.
