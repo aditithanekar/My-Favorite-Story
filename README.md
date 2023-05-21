@@ -20,14 +20,14 @@ Some features we plan on providing include:
 ## User Interface Specification
 ### Navigation Diagram
 This navigation diagram represents how our screen layout changes from the main menu to choose your character and genre, and split into how the storylines change for the dating storyline on the left as well as the looping horror story on the right side.
->  <img src="navigationdiagram.jpg" alt="UMLdiag" width="850">
+>  <img src="navigationdiagram.jpg" alt="UMLdiag" width="900">
 
 ### Screen Layouts
 Click [here](https://docs.google.com/document/d/1xZE690FOioJzWJGLKPGApxL3kFQgQ7RXP86dCf6oQLs/edit?usp=sharing) to see our screen layout.
 
 ## Class Diagram
 This is a UML class diagram describing our abstract Genre and Player classes as well as our Scene and Sound Effects main classes. The inherited classes of the Genre are the Horror and RomCom classes and the inherited classes of the Player are our two characters names Vanilla and Mint.
-> <img src="umldiagram.jpg" alt="UMLdiag" width="850">
+> <img src="uml2.png" alt="UMLdiag" width="900">
  
 ### SOLID Principles
 * Single Responsibility: We created new classes called the outputText and inputText. These are now in charge of printing and taking in text respectfully, instead of teh Scene class doing so. This makes it so the Scene class only has a single responsibility instead of three. This change helped us write better code because it divided up the general task of outputting and inputting text into their own interfaces rather than redundantly implementing them for each Genre class. This way, it can be used by all the other classes.
