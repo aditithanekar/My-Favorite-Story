@@ -29,26 +29,11 @@ Click [here](https://docs.google.com/document/d/1xZE690FOioJzWJGLKPGApxL3kFQgQ7R
 This is a UML class diagram describing our abstract Genre and Player classes as well as our Scene and Sound Effects main classes. The inherited classes of the Genre are the Horror and RomCom classes and the inherited classes of the Player are our two characters names Vanilla and Mint.
 > <img src="umldiagram.jpg" alt="UMLdiag" width="850">
  
-# Phase III
-> You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
- > * Perform a new sprint plan like you did in Phase II.
- > * You should also make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
-
+### SOLID Principles
+* Single Responsibility: We created new classes called the outputText and inputText. These are now in charge of printing and taking in text respectfully, instead of teh Scene class doing so. This makes it so the Scene class only has a single responsibility instead of three. This change helped us write better code because it divided up the general task of outputting and inputting text into their own interfaces rather than redundantly implementing them for each Genre class. This way, it can be used by all the other classes.
+* Liskov Substitution: We created virtual void functions in the Genre class as well as the Player class to allow the other classes to implement and replace the functions of the same purpose as the abstract classes. With the change of the virtual functions, it would allow the calls of the right functions in the other derived classes. 
+* Open/Closed and Dependency Inversion: We made the two abstract functions to only contain basic information about the inherited classes. If another class were to inherit from these two abstract classes, the abstract class would not need to be modified in any way. Also, since the abstract classes no longer depend on the inherited classes (since the lower level classes don’t modify the higher level classes), this also now follows the dependency inversion principle. We were able to implement more classes that does not change the inherited classes but were able to motify the abstract classes. 
+* Interface segregation: We have separate interfaces for our Dating and Horror genres, which helps us split them up and not have them depend on each other. For example, the Horror interface uses a dollDist variable which is not used in the RomCom interface because it doesn’t need to use it even though they are both a genre. This is better than implementing a dollDist in Genre as a general Genre variable so that all the derived classes do not have to use it.
  
  > ## Final deliverable
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
