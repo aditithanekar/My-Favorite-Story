@@ -1,0 +1,9 @@
+You look around for a way down. In the corner of the basement, there’s a ladder. Perfect! You grab the ladder and climb down, closing the hatch on your way down. 
+Now that you’ve bought some time for yourself, you carefully scour the notebook. There’s a little clipping from another book stuck between the pages. This might be it! You pull out the slip of paper, and it has a list of ingredients and some instructions. 
+All you have to do is find the ingredients and chant the words on the page while mixing them to get rid of the spirit. The room actually has almost all the ingredients you need, so you start stashing them. But the last ingredient is a dead animal skull.
+[ascii graphics of narrator appear]
+“What do you do next?”
+Choice A: Try going back to the basement. You saw a dead mouse earlier. 
+Choice B: Try going down the escape tunnel and hope you see a dead animal on the way. 
+Select an option: 
+[Transition: You enter the basement just as a doll breaks in.]

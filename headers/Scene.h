@@ -10,7 +10,7 @@ private:
     string graphics;
     int textIndex; //current index in text array
     int totalTexts; //total number of texts in array
-    string text[30];
+    string text[10];
 public:
     Scene(string fileName);
     ~Scene();
