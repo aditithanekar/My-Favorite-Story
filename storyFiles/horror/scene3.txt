@@ -1,0 +1,8 @@
+You run towards the attic, grabbing the salt tub, to search your parent’s belongings for any clues. You can use the salt to keep the doll out. As you enter the basement, you realize that you might be trapped. 
+You start frantically looking through your parent's belongings when you hear a loud banging from the entrance. It’s the doll! 
+[ascii graphics of narrator appear]
+“What do you do next?”
+Choice A: Start looking for a weapon and prepare to fight. The salt won’t hold much longer. 
+Choice B: Continue looking for a solution. The salt should keep the doll back.
+Select an option: 
+[Transition: the salt actually held for the next 30 minutes. You stood there scared until the doll broke in]

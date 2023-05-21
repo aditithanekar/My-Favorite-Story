@@ -1,0 +1,8 @@
+You look for an escape. You can look through the notebook later. You suddenly remember that your basement has a second door. 
+After stashing the notebook, you open the door, only to find a big drop into a secret room. It does have an escape tunnel, but you will likely hurt yourself if you jump. 
+[ascii graphics of narrator appear]
+“What do you do next?”
+Choice A: Jump anyway. You might not have time to find another way down. 
+Choice B: Look around for a different way down. 
+Select an option: 
+[Transition: You sprained your ankle, unable to move until the doll found you.]

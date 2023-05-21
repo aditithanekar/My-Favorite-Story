@@ -1,0 +1,6 @@
+You open your door and scream. Is that a doll on the (__) step? 
+You can’t go there, that same doll killed your parents and now it’s out to get you. 
+“What do you do next?”
+Choice A: Try to go past the doll by parkouring around it.
+Choice B: Close the door and come up with a new plan. 
+Select an option: 
