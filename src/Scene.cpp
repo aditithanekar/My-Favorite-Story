@@ -34,8 +34,9 @@ string Scene::getText(){
     if(textIndex < totalTexts){
         textIndex++;
         return text[textIndex -1];
+    }else{
+        return "";
     }
-    
 }
 
 
