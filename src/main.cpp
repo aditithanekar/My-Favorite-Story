@@ -3,6 +3,7 @@
 #include <chrono>
 #include <thread>
 #include "OutputText.h"
+#include "InputText.h"
 
 using namespace std;
 

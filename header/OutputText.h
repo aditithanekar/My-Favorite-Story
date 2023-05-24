@@ -1,5 +1,6 @@
-#ifndef OutputText_H
-#define OutputText_H
+#ifndef OutputText_h
+#define OutputText_h
+
 
 #include <iostream>
 #include <string>
