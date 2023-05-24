@@ -9,6 +9,7 @@ add_executable(runAllTests
   OutputTextTest.cpp
   sceneTests.cpp 
   testPlayer.cpp
+  horrorTests.cpp
 )
 
 target_link_libraries(runAllTests gtest gtest_main)
