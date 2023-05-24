@@ -69,24 +69,10 @@ include test/CMakeFiles/runAllTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/runAllTests.dir/flags.make
 
-test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
-test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: test/InputTextTest.cpp
-test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: test/CMakeFiles/runAllTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o -MF CMakeFiles/runAllTests.dir/InputTextTest.cpp.o.d -o CMakeFiles/runAllTests.dir/InputTextTest.cpp.o -c /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp
-
-test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/InputTextTest.cpp.i"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp > CMakeFiles/runAllTests.dir/InputTextTest.cpp.i
-
-test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/InputTextTest.cpp.s"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp -o CMakeFiles/runAllTests.dir/InputTextTest.cpp.s
-
 test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
 test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o: test/OutputTextTest.cpp
 test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o: test/CMakeFiles/runAllTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o"
 	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o -MF CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o.d -o CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o -c /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/OutputTextTest.cpp
 
 test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.i: cmake_force
@@ -99,13 +85,11 @@ test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.s: cmake_force
 
 # Object files for target runAllTests
 runAllTests_OBJECTS = \
-"CMakeFiles/runAllTests.dir/InputTextTest.cpp.o" \
 "CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o"
 
 # External object files for target runAllTests
 runAllTests_EXTERNAL_OBJECTS =
 
-bin/runAllTests: test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/OutputTextTest.cpp.o
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/build.make
 bin/runAllTests: lib/libgtest.a
@@ -114,7 +98,7 @@ bin/runAllTests: lib/libsimpleLibrary.a
 bin/runAllTests: lib/libgtest.a
 bin/runAllTests: /usr/lib64/libm.so
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/runAllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/runAllTests"
 	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runAllTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

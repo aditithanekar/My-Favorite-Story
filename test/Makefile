@@ -175,30 +175,6 @@ runAllTests/fast:
 	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
 .PHONY : runAllTests/fast
 
-InputTextTest.o: InputTextTest.cpp.o
-.PHONY : InputTextTest.o
-
-# target to build an object file
-InputTextTest.cpp.o:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o
-.PHONY : InputTextTest.cpp.o
-
-InputTextTest.i: InputTextTest.cpp.i
-.PHONY : InputTextTest.i
-
-# target to preprocess a source file
-InputTextTest.cpp.i:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.i
-.PHONY : InputTextTest.cpp.i
-
-InputTextTest.s: InputTextTest.cpp.s
-.PHONY : InputTextTest.s
-
-# target to generate assembly for a file
-InputTextTest.cpp.s:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.s
-.PHONY : InputTextTest.cpp.s
-
 OutputTextTest.o: OutputTextTest.cpp.o
 .PHONY : OutputTextTest.o
 
@@ -236,9 +212,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... runAllTests"
-	@echo "... InputTextTest.o"
-	@echo "... InputTextTest.i"
-	@echo "... InputTextTest.s"
 	@echo "... OutputTextTest.o"
 	@echo "... OutputTextTest.i"
 	@echo "... OutputTextTest.s"

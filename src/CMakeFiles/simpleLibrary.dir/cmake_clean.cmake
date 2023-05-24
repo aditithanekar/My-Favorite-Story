@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "../lib/libsimpleLibrary.a"
   "../lib/libsimpleLibrary.pdb"
-  "CMakeFiles/simpleLibrary.dir/InputText.cpp.o"
-  "CMakeFiles/simpleLibrary.dir/InputText.cpp.o.d"
   "CMakeFiles/simpleLibrary.dir/OutputText.cpp.o"
   "CMakeFiles/simpleLibrary.dir/OutputText.cpp.o.d"
 )

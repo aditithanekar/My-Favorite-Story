@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/libsimpleLibrary.a CMakeFiles/simpleLibrary.dir/OutputText.cpp.o CMakeFiles/simpleLibrary.dir/InputText.cpp.o
+/usr/bin/ar qc ../lib/libsimpleLibrary.a CMakeFiles/simpleLibrary.dir/OutputText.cpp.o
 /usr/bin/ranlib ../lib/libsimpleLibrary.a

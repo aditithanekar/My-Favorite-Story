@@ -175,30 +175,6 @@ simpleLibrary/fast:
 	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/simpleLibrary.dir/build.make src/CMakeFiles/simpleLibrary.dir/build
 .PHONY : simpleLibrary/fast
 
-InputText.o: InputText.cpp.o
-.PHONY : InputText.o
-
-# target to build an object file
-InputText.cpp.o:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/simpleLibrary.dir/build.make src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o
-.PHONY : InputText.cpp.o
-
-InputText.i: InputText.cpp.i
-.PHONY : InputText.i
-
-# target to preprocess a source file
-InputText.cpp.i:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/simpleLibrary.dir/build.make src/CMakeFiles/simpleLibrary.dir/InputText.cpp.i
-.PHONY : InputText.cpp.i
-
-InputText.s: InputText.cpp.s
-.PHONY : InputText.s
-
-# target to generate assembly for a file
-InputText.cpp.s:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/simpleLibrary.dir/build.make src/CMakeFiles/simpleLibrary.dir/InputText.cpp.s
-.PHONY : InputText.cpp.s
-
 OutputText.o: OutputText.cpp.o
 .PHONY : OutputText.o
 
@@ -236,9 +212,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... simpleLibrary"
-	@echo "... InputText.o"
-	@echo "... InputText.i"
-	@echo "... InputText.s"
 	@echo "... OutputText.o"
 	@echo "... OutputText.i"
 	@echo "... OutputText.s"
