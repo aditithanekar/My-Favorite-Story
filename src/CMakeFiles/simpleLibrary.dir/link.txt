@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libsimpleLibrary.a CMakeFiles/simpleLibrary.dir/inputText.cpp.o
+/usr/bin/ranlib ../lib/libsimpleLibrary.a
