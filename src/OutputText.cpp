@@ -12,7 +12,8 @@ using namespace std;
 
  }
 
-void OutputText::printingText(const string& text, int delay_ms){
+void OutputText::printingText(const string& text){
+    int delay_ms = 100; // Delay in milliseconds
     for (char c : text) {
         cout << c << flush; // Print character without buffering
 

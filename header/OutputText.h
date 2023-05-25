@@ -12,7 +12,7 @@ class OutputText{
         string text;
     public:
         OutputText();
-        void printingText(const string& text, int delay_ms);
+        void printingText(const string& text);
 };
 
 #endif
