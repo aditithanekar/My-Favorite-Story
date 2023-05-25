@@ -4,6 +4,8 @@ add_library(simpleLibrary
   OutputText.cpp 
   Player.cpp
   Scene.cpp
+  Vanilla.cpp
+  Mint.cpp
 )
 
 find_library(M_LIB m)
