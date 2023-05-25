@@ -35,6 +35,7 @@ string Scene::getText(){
         textIndex++;
         return text[textIndex -1];
     }
+    return "";
     
 }
 
