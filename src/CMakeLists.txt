@@ -1,5 +1,5 @@
 add_library(simpleLibrary
-  inputText.cpp
+  InputText.cpp
 )
 
 find_library(M_LIB m)

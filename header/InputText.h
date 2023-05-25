@@ -12,7 +12,8 @@ class InputText{
     public:
         InputText();
         char getUserInput();
-        bool validOptions(const char& letter);
+        void setUserInput(char letter);
+        bool validOptions(const char& letter, int numOption);
 };
 
 #endif

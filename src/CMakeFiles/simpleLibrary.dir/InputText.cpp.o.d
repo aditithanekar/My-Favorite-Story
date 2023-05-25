@@ -1,7 +1,7 @@
-src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o: \
- /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/inputText.cpp \
+src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o: \
+ /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/InputText.cpp \
  /usr/include/stdc-predef.h \
- /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/../header/inputText.h \
+ /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/../header/InputText.h \
  /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

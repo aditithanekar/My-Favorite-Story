@@ -69,28 +69,28 @@ include src/CMakeFiles/simpleLibrary.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/simpleLibrary.dir/flags.make
 
-src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o: src/CMakeFiles/simpleLibrary.dir/flags.make
-src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o: src/inputText.cpp
-src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o: src/CMakeFiles/simpleLibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o -MF CMakeFiles/simpleLibrary.dir/inputText.cpp.o.d -o CMakeFiles/simpleLibrary.dir/inputText.cpp.o -c /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/inputText.cpp
+src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o: src/CMakeFiles/simpleLibrary.dir/flags.make
+src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o: src/InputText.cpp
+src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o: src/CMakeFiles/simpleLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o"
+	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o -MF CMakeFiles/simpleLibrary.dir/InputText.cpp.o.d -o CMakeFiles/simpleLibrary.dir/InputText.cpp.o -c /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/InputText.cpp
 
-src/CMakeFiles/simpleLibrary.dir/inputText.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleLibrary.dir/inputText.cpp.i"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/inputText.cpp > CMakeFiles/simpleLibrary.dir/inputText.cpp.i
+src/CMakeFiles/simpleLibrary.dir/InputText.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleLibrary.dir/InputText.cpp.i"
+	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/InputText.cpp > CMakeFiles/simpleLibrary.dir/InputText.cpp.i
 
-src/CMakeFiles/simpleLibrary.dir/inputText.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleLibrary.dir/inputText.cpp.s"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/inputText.cpp -o CMakeFiles/simpleLibrary.dir/inputText.cpp.s
+src/CMakeFiles/simpleLibrary.dir/InputText.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleLibrary.dir/InputText.cpp.s"
+	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/InputText.cpp -o CMakeFiles/simpleLibrary.dir/InputText.cpp.s
 
 # Object files for target simpleLibrary
 simpleLibrary_OBJECTS = \
-"CMakeFiles/simpleLibrary.dir/inputText.cpp.o"
+"CMakeFiles/simpleLibrary.dir/InputText.cpp.o"
 
 # External object files for target simpleLibrary
 simpleLibrary_EXTERNAL_OBJECTS =
 
-lib/libsimpleLibrary.a: src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o
+lib/libsimpleLibrary.a: src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o
 lib/libsimpleLibrary.a: src/CMakeFiles/simpleLibrary.dir/build.make
 lib/libsimpleLibrary.a: src/CMakeFiles/simpleLibrary.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../lib/libsimpleLibrary.a"

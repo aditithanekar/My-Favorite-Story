@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../lib/libsimpleLibrary.a"
   "../lib/libsimpleLibrary.pdb"
-  "CMakeFiles/simpleLibrary.dir/inputText.cpp.o"
-  "CMakeFiles/simpleLibrary.dir/inputText.cpp.o.d"
+  "CMakeFiles/simpleLibrary.dir/InputText.cpp.o"
+  "CMakeFiles/simpleLibrary.dir/InputText.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

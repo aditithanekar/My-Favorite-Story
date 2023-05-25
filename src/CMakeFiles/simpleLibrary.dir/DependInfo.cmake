@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/inputText.cpp" "src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o" "gcc" "src/CMakeFiles/simpleLibrary.dir/inputText.cpp.o.d"
+  "/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/InputText.cpp" "src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o" "gcc" "src/CMakeFiles/simpleLibrary.dir/InputText.cpp.o.d"
   )
 
 # Targets to which this target links.
