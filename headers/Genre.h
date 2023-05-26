@@ -9,14 +9,14 @@ using namespace std;
 
 class Genre{
 
-    struct SceneNode
-    {
-        Scene* scene;
-        SceneNode* choiceA;
-        SceneNode* choiceB;
-        SceneNode(string filename): scene(new Scene(filename)), choiceA(nullptr), choiceB(nullptr){};
-    };
     protected:
+        struct SceneNode
+        {
+            Scene* scene;
+            SceneNode* choiceA;
+            SceneNode* choiceB;
+            SceneNode(string filename): scene(new Scene(filename)), choiceA(nullptr), choiceB(nullptr){};
+        };
         string genreName;
         SceneNode* root;
     public:

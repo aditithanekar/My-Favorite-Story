@@ -1,33 +1,34 @@
-#include "Dating.h"
+#include "../headers/Dating.h"
 
 Dating::Dating()
 {
     genreName="Dating";
     root = nullptr;
 }
-Dating::~Dating
+Dating::~Dating()
 {
-    delete end;
-    delete scene8b;
-    delete scene8a;
-    delete scene7ab;
-    delete scene7aa;
-    delete scene6bb;
-    delete scene6b;
-    delete scene6a;
-    delete scene5bb;
-    delete scene5ba;
-    delete scene5ab;
-    delete scene5aatransitionb;
-    delete scene5aatransitiona;
-    delete scene5;
-    delete scene4b;
-    delete scene4a;
-    delete scene3b;
-    delete scene3a;
-    delete scene2b;
-    delete scene2a;
-    delete scene1;
+    //Do i delete all of these...?
+    // delete end;
+    // delete scene8b;
+    // delete scene8a;
+    // delete scene7ab;
+    // delete scene7aa;
+    // delete scene6bb;
+    // delete scene6b;
+    // delete scene6a;
+    // delete scene5bb;
+    // delete scene5ba;
+    // delete scene5ab;
+    // delete scene5aatransitionb;
+    // delete scene5aatransitiona;
+    // delete scene5;
+    // delete scene4b;
+    // delete scene4a;
+    // delete scene3b;
+    // delete scene3a;
+    // delete scene2b;
+    // delete scene2a;
+    // delete scene1;
 }
 
 void Dating::setupScenes()
@@ -120,7 +121,7 @@ void Dating::playScene()
     while(currentSceneNode != nullptr)
     {
         InputText input = InputText();
-        currentSceneNode.displayScene();
+        displayScene(currentSceneNode->scene);
         cin>>inputChar;
         input.setUserInput(inputChar);
 
