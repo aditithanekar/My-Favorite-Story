@@ -27,16 +27,16 @@ bool InputText::validOptions(const char& choice, int numOption){
         }
     }
     if(numOption == 4){
-        if(choice == 'a'){
+        if(choice == 'a' || choice == 'A'){
             return true;
         }
-        if(choice == 'b'){
+        if(choice == 'b'|| choice == 'B'){
             return true;
         }
-        if(choice == 'c'){
+        if(choice == 'c'|| choice == 'C'){
             return true;
         }
-        if(choice == 'd'){
+        if(choice == 'd'|| choice == 'D'){
             return true;
         }
     }

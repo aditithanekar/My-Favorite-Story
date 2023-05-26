@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/googletest/cmake_install.cmake")
+  include("/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/googletest/cmake_install.cmake")
 endif()
 

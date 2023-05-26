@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014
+CMAKE_BINARY_DIR = /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test//CMakeFiles/progress.marks
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles 0
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -E cmake_progress_start /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test//CMakeFiles/progress.marks
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/runAllTests.dir/rule:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runAllTests.dir/rule
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runAllTests.dir/rule
 .PHONY : test/CMakeFiles/runAllTests.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ runAllTests: test/CMakeFiles/runAllTests.dir/rule
 
 # fast build rule for target.
 runAllTests/fast:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
 .PHONY : runAllTests/fast
 
 InputTextTest.o: InputTextTest.cpp.o
@@ -180,7 +180,7 @@ InputTextTest.o: InputTextTest.cpp.o
 
 # target to build an object file
 InputTextTest.cpp.o:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o
 .PHONY : InputTextTest.cpp.o
 
 InputTextTest.i: InputTextTest.cpp.i
@@ -188,7 +188,7 @@ InputTextTest.i: InputTextTest.cpp.i
 
 # target to preprocess a source file
 InputTextTest.cpp.i:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.i
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.i
 .PHONY : InputTextTest.cpp.i
 
 InputTextTest.s: InputTextTest.cpp.s
@@ -196,7 +196,7 @@ InputTextTest.s: InputTextTest.cpp.s
 
 # target to generate assembly for a file
 InputTextTest.cpp.s:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.s
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.s
 .PHONY : InputTextTest.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

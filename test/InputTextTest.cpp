@@ -16,30 +16,58 @@ TEST(InputTest, testOption2){
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 2));
 }
 
-TEST(InputTest, testOptionA){
+TEST(InputTest, testOptiona){
     InputText t;
     t.setUserInput('a');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionB){
+TEST(InputTest, testOptionb){
     InputText t;
     t.setUserInput('b');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionC){
+TEST(InputTest, testOptionc){
     InputText t;
     t.setUserInput('c');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionD){
+TEST(InputTest, testOptiond){
     InputText t;
     t.setUserInput('d');
+   // t.getUserInput();
+    EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
+}
+
+TEST(InputTest, testOptionA){
+    InputText t;
+    t.setUserInput('A');
+   // t.getUserInput();
+    EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
+}
+
+TEST(InputTest, testOptionB){
+    InputText t;
+    t.setUserInput('B');
+   // t.getUserInput();
+    EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
+}
+
+TEST(InputTest, testOptionC){
+    InputText t;
+    t.setUserInput('C');
+   // t.getUserInput();
+    EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
+}
+
+TEST(InputTest, testOptionD){
+    InputText t;
+    t.setUserInput('D');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }

@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

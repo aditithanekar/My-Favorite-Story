@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/cmake_install.cmake")
-  include("/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/cmake_install.cmake")
+  include("/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/src/cmake_install.cmake")
+  include("/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

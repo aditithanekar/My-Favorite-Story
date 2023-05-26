@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014
+CMAKE_BINARY_DIR = /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/runAllTests.dir/depend.make
@@ -70,18 +70,18 @@ include test/CMakeFiles/runAllTests.dir/progress.make
 include test/CMakeFiles/runAllTests.dir/flags.make
 
 test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
-test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: test/InputTextTest.cpp
+test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp
 test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o: test/CMakeFiles/runAllTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o -MF CMakeFiles/runAllTests.dir/InputTextTest.cpp.o.d -o CMakeFiles/runAllTests.dir/InputTextTest.cpp.o -c /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o"
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.o -MF CMakeFiles/runAllTests.dir/InputTextTest.cpp.o.d -o CMakeFiles/runAllTests.dir/InputTextTest.cpp.o -c /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp
 
 test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/InputTextTest.cpp.i"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp > CMakeFiles/runAllTests.dir/InputTextTest.cpp.i
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp > CMakeFiles/runAllTests.dir/InputTextTest.cpp.i
 
 test/CMakeFiles/runAllTests.dir/InputTextTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/InputTextTest.cpp.s"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp -o CMakeFiles/runAllTests.dir/InputTextTest.cpp.s
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/InputTextTest.cpp -o CMakeFiles/runAllTests.dir/InputTextTest.cpp.s
 
 # Object files for target runAllTests
 runAllTests_OBJECTS = \
@@ -98,18 +98,18 @@ bin/runAllTests: lib/libsimpleLibrary.a
 bin/runAllTests: lib/libgtest.a
 bin/runAllTests: /usr/lib64/libm.so
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/runAllTests"
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runAllTests.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/runAllTests"
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runAllTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/runAllTests.dir/build: bin/runAllTests
 .PHONY : test/CMakeFiles/runAllTests.dir/build
 
 test/CMakeFiles/runAllTests.dir/clean:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && $(CMAKE_COMMAND) -P CMakeFiles/runAllTests.dir/cmake_clean.cmake
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test && $(CMAKE_COMMAND) -P CMakeFiles/runAllTests.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/runAllTests.dir/clean
 
 test/CMakeFiles/runAllTests.dir/depend:
-	cd /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/CMakeFiles/runAllTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 /home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014 /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test /data/home/csmajs/spun003/github-classroom/cs100/final-project-kchau047-rwong095-spun003-athan014/test/CMakeFiles/runAllTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/runAllTests.dir/depend
 
