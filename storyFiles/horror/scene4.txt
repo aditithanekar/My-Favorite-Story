@@ -5,4 +5,3 @@ You start flipping through the notebook when you see your salt line through the 
 Choice A: Continue flipping through the notebook. The salt line should hold for another few minutes.
 Choice B: Look for an escape. You can look through the notebook later. 
 Select an option: 
-[Transition: The doll breaks in while you’re looking for a solution.]
