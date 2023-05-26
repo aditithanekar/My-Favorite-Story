@@ -6,6 +6,7 @@ add_library(simpleLibrary
   Scene.cpp
   Vanilla.cpp
   Mint.cpp
+  InputText.cpp
 )
 
 find_library(M_LIB m)
