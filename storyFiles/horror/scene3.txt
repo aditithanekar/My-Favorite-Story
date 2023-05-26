@@ -5,4 +5,3 @@ You start frantically looking through your parent's belongings when you hear a l
 Choice A: Start looking for a weapon and prepare to fight. The salt won’t hold much longer. 
 Choice B: Continue looking for a solution. The salt should keep the doll back.
 Select an option: 
-[Transition: the salt actually held for the next 30 minutes. You stood there scared until the doll broke in]

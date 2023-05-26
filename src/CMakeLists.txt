@@ -5,6 +5,9 @@ add_library(simpleLibrary
   Player.cpp
   Scene.cpp
   Dating.cpp
+  Vanilla.cpp
+  Mint.cpp
+  InputText.cpp
 )
 
 find_library(M_LIB m)

@@ -5,4 +5,3 @@ After stashing the notebook, you open the door, only to find a big drop into a s
 Choice A: Jump anyway. You might not have time to find another way down. 
 Choice B: Look around for a different way down. 
 Select an option: 
-[Transition: You sprained your ankle, unable to move until the doll found you.]
