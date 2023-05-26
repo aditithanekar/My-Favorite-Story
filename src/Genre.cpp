@@ -6,8 +6,8 @@
 using namespace std;
 
 
-Genre::Genre(string genreName){
-    this->genreName = genreName;
+Genre::Genre(){
+    this->genreName = "Horror";
 }
 
 string Genre::getGenreName(){

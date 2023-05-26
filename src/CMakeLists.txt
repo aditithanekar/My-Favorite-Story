@@ -4,6 +4,7 @@ add_library(simpleLibrary
   OutputText.cpp 
   Player.cpp
   Scene.cpp
+  Dating.cpp
   Vanilla.cpp
   Mint.cpp
   InputText.cpp
