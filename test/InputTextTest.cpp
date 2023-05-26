@@ -2,70 +2,84 @@
 #include "../header/InputText.h"
 
 
-TEST(InputTest, testOption1 ){
+TEST(InputTest, testOption2A){
     InputText t;
-    t.setUserInput('1');
+    t.setUserInput('A');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 2));
 }
 
-TEST(InputTest, testOption2){
+TEST(InputTest, testOption2a){
     InputText t;
-    t.setUserInput('2');
+    t.setUserInput('a');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 2));
 }
 
-TEST(InputTest, testOptiona){
+TEST(InputTest, testOption2B){
+    InputText t;
+    t.setUserInput('B');
+   // t.getUserInput();
+    EXPECT_TRUE(t.validOptions(t.getUserInput(), 2));
+}
+
+TEST(InputTest, testOption2b){
+    InputText t;
+    t.setUserInput('b');
+   // t.getUserInput();
+    EXPECT_TRUE(t.validOptions(t.getUserInput(), 2));
+}
+
+TEST(InputTest, testOption4a){
     InputText t;
     t.setUserInput('a');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionb){
+TEST(InputTest, testOption4b){
     InputText t;
     t.setUserInput('b');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionc){
+TEST(InputTest, testOption4c){
     InputText t;
     t.setUserInput('c');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptiond){
+TEST(InputTest, testOption4d){
     InputText t;
     t.setUserInput('d');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionA){
+TEST(InputTest, testOption4A){
     InputText t;
     t.setUserInput('A');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionB){
+TEST(InputTest, testOption4B){
     InputText t;
     t.setUserInput('B');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionC){
+TEST(InputTest, testOption4C){
     InputText t;
     t.setUserInput('C');
    // t.getUserInput();
     EXPECT_TRUE(t.validOptions(t.getUserInput(), 4));
 }
 
-TEST(InputTest, testOptionD){
+TEST(InputTest, testOption4D){
     InputText t;
     t.setUserInput('D');
    // t.getUserInput();

@@ -19,10 +19,10 @@ void InputText::setUserInput(char letter){
 bool InputText::validOptions(const char& choice, int numOption){
     //while (choice != 'q' || choice != 'Q'){
     if(numOption == 2){
-        if(choice == '1'){
+         if(choice == 'a' || choice == 'A'){
             return true;
         }
-        if(choice == '2'){
+        if(choice == 'b'|| choice == 'B'){
             return true;
         }
     }
