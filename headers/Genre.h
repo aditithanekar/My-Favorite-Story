@@ -20,7 +20,7 @@ class Genre{
         string genreName;
         SceneNode* root;
     public:
-        Genre(string genre);
+        Genre();
         string getGenreName();
         virtual void playScene() = 0;// this is the one for choices/playing
         virtual void setupScenes() = 0;

@@ -1,4 +1,5 @@
 #include "../headers/Dating.h"
+//#include "../headers/InputText.h"
 
 Dating::Dating()
 {
@@ -120,9 +121,8 @@ void Dating::playScene()
     SceneNode* currentSceneNode = root;
     while(currentSceneNode != nullptr)
     {
-        InputText input = InputText();
-        displayScene(currentSceneNode->scene);
-        cin>>inputChar;
+        InputText input;
+        displayScene(currentSceneNode->scene);    
         input.setUserInput(inputChar);
 
         if(input.getUserInput() == 'A' || input.getUserInput() =='a')
