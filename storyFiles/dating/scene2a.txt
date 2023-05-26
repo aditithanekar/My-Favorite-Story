@@ -3,6 +3,3 @@ You ask them out to a hike with you but before you could finish saying anything 
 Do you: 
 A: Stay and try to cheer them up and talk things out?
 B: Break up with them before they break up with you.
-Narrator ascii graphic appears (talking to you)
-Transition: [They tell you how they really can’t deal with you anymore and you are crushed. They decide to break up with you and you really don’t have a choice but to go on that solo hike. At least you tried clearing the air. :( ]
-Good choice, before you leave they mention that they were feeling the same way. Now it looks like you can go on that solo hike carefree! 
