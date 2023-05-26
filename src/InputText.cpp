@@ -4,42 +4,23 @@
 #include <string>
 using namespace std;
 
-InputText::InputText(){
-    
- }
-
 char InputText::getUserInput(){
     return option;
 }
 
-void InputText::setUserInput(char letter){
-    option = letter;
+void InputText::setUserInput(){
+    cin >> option;
+    while(validOptions(option) ==  false){
+        cin >> option;
+    }
 }
 
-bool InputText::validOptions(const char& choice, int numOption){
-    //while (choice != 'q' || choice != 'Q'){
-    if(numOption == 2){
-         if(choice == 'a' || choice == 'A'){
-            return true;
-        }
-        if(choice == 'b'|| choice == 'B'){
-            return true;
-        }
+bool InputText::validOptions(const char& option){
+    if(option == 'a' || option == 'A'){
+        return true;
     }
-    if(numOption == 4){
-        if(choice == 'a' || choice == 'A'){
-            return true;
-        }
-        if(choice == 'b'|| choice == 'B'){
-            return true;
-        }
-        if(choice == 'c'|| choice == 'C'){
-            return true;
-        }
-        if(choice == 'd'|| choice == 'D'){
-            return true;
-        }
+    if(option == 'b'|| option == 'B'){
+        return true;
     }
     return false;
-
 }

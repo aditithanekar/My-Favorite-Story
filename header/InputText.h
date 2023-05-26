@@ -10,10 +10,9 @@ class InputText{
     private:
         char option;
     public:
-        InputText();
         char getUserInput();
-        void setUserInput(char letter);
-        bool validOptions(const char& letter, int numOption);
+        void setUserInput();
+        bool validOptions(const char& letter);
 };
 
 #endif
