@@ -16,38 +16,60 @@ using namespace std;
 
 void printGenreMenu();
 void printPlayerMenu();
+void printPlayAgainMenu();
 
 int main(){
+
+
+
     InputText genreInput;
     printGenreMenu();
     genreInput.setUserInput();
+    cout << endl;
 
+    //dating
     if(genreInput.getUserInput() == 'a' || genreInput.getUserInput() == 'A'){
         Dating userGenre;
         userGenre.setupScenes();
+
+        //player choice
+        InputText characterInput;
+        printPlayerMenu();
+        characterInput.setUserInput();
+        cout << endl;
+        if(characterInput.getUserInput() == 'a' || characterInput.getUserInput() == 'A'){
+            Vanilla userCharacter;
+        }
+        else{
+            Mint userCharacter;
+        }
         userGenre.playScene();
     }
+
+    //horror
     else{
         Horror userGenre;
         userGenre.setupScenes();
+
+        //player choice
+        InputText characterInput;
+        printPlayerMenu();
+        characterInput.setUserInput();
+        cout << endl;
+        if(characterInput.getUserInput() == 'a' || characterInput.getUserInput() == 'A'){
+            Vanilla userCharacter;
+        }
+        else{
+            Mint userCharacter;
+        }
         userGenre.playScene();
     }
-
-    InputText characterInput;
-    printPlayerMenu();
-    characterInput.setUserInput();
-    if(characterInput.getUserInput() == 'a' || characterInput.getUserInput() == 'A'){
-        Vanilla userCharacter;
-    }
-    else{
-        Mint userCharacter;
-    }
-
+    
     return 0;
 }
 
 void printGenreMenu(){
-    cout << "MY FAVORITE STORY" << endl;
+    cout << endl << "MY FAVORITE STORY" << endl;
     cout << endl;
     cout << "Choose your story genre:" << endl;
     cout << "a. Dating" << endl;
@@ -61,3 +83,10 @@ void printPlayerMenu(){
     cout << "b. Mint" << endl;
     cout << "Please select an option: " << endl;
 }
+
+// void printPlayAgainMenu(){
+//     cout << "Would you like to play again?" << endl;
+//     cout << "a. Yes, give me another try!" << endl;
+//     cout << "b. No, thank you!" << endl;
+//     cout << "Please select an option: " << endl;
+// }

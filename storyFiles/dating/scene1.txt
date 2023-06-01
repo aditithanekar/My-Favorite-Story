@@ -1,4 +1,5 @@
-It’s a bright sunny day, perfect to go outside on a hike. You can’t wait to go outside and soak in the sun's rays and have a magical romantic day. You want to bring your significant other along with you, but you’ve been having tensions for the past year. 
-Is this a time to spark some good ‘ol romance again? Or would you rather go on a solo hike to take your mind off them?
-A:  I still love them, I want to ask them out on a hike with me <3
-B: I’m over it, I need to clear my mind and go on a solo hike.
+It’s a bright sunny day, perfect to go outside on a hike. You can’t wait to go outside and soak in the sun's rays and have a magical romantic day. You want to bring your significant other along with you, but you’ve been having tensions for the past year.%%
+Is this a time to spark some good ‘ol romance again? Or would you rather go on a solo hike to take your mind off them?%
+A:  I still love them, I want to ask them out on a hike with me <3%
+B: I’m over it, I need to clear my mind and go on a solo hike.%
+Select an option: %

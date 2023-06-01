@@ -1,5 +1,8 @@
-The new person you met at the hike invites you to a dinner date where there’s a salsa social going on at this fancy restaurant. 
-“Narrator appears” oooooh! Looks like they’re interested in you too :)
-Do you: 
-A: decide to go with them and accept? 
-B: realize you are still attached to your relationship and decide to talk to them about the whole situation? 
+The new person you met at the hike invites you to a dinner date where there’s a salsa social going on at this fancy restaurant.%
+     __                       __%
+      \   \  O   -    o    /   / %
+       \   \                /    / oooooh! Looks like they’re interested in you too%%
+Do you:%
+A: decide to go with them and accept?%
+B: realize you are still attached to your relationship and decide to talk to them about the whole situation?%
+Select an option: %

@@ -34,27 +34,27 @@ Dating::~Dating()
 
 void Dating::setupScenes()
 {
-    SceneNode* scene1 = new SceneNode("../storyfiles/dating/scene1.txt");
-    SceneNode* scene2a = new SceneNode("scene2a.txt");
-    SceneNode* scene2b = new SceneNode("scene2b.txt");
-    SceneNode* scene3a = new SceneNode("scene3a.txt");
-    SceneNode* scene3b = new SceneNode("scene3b.txt");    
-    SceneNode* scene4a = new SceneNode("scene4a.txt");
-    SceneNode* scene4b = new SceneNode("scene4b.txt");
-    SceneNode* scene5aa = new SceneNode("scene5aa.txt");
-    SceneNode* scene5aatransitiona = new SceneNode("scene5.5a.txt");
-    SceneNode* scene5aatransitionb = new SceneNode("scene5.5b.txt");
-    SceneNode* scene5ab = new SceneNode("scene5ab.txt");
-    SceneNode* scene5ba = new SceneNode("scene5ba.txt");
-    SceneNode* scene5bb = new SceneNode("scene5bb.txt");
-    SceneNode* scene6a = new SceneNode("scene6a.txt");
-    SceneNode* scene6b = new SceneNode("scene6b.txt");
-    SceneNode* scene6bb = new SceneNode("scene6bb.txt");
-    SceneNode* scene7aa = new SceneNode("scene7aa.txt");
-    SceneNode* scene7ab = new SceneNode("scene7ab.txt");
-    SceneNode* scene8a = new SceneNode("scene8a.txt");
-    SceneNode* scene8b = new SceneNode("scene8b.txt");
-    SceneNode* end = new SceneNode("ending.txt");
+    SceneNode* scene1 = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene1.txt");
+    SceneNode* scene2a = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene2a.txt");
+    SceneNode* scene2b = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene2b.txt");
+    SceneNode* scene3a = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene3a.txt");
+    SceneNode* scene3b = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene3b.txt");    
+    SceneNode* scene4a = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene4a.txt");
+    SceneNode* scene4b = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene4b.txt");
+    SceneNode* scene5aa = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene5aa.txt");
+    SceneNode* scene5aatransitiona = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene5.5a.txt");
+    SceneNode* scene5aatransitionb = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene5.5b.txt");
+    SceneNode* scene5ab = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene5ab.txt");
+    SceneNode* scene5ba = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene5ba.txt");
+    SceneNode* scene5bb = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene5bb.txt");
+    SceneNode* scene6a = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene6a.txt");
+    SceneNode* scene6b = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene6b.txt");
+    SceneNode* scene6bb = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene6bb.txt");
+    SceneNode* scene7aa = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene7aa.txt");
+    SceneNode* scene7ab = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene7ab.txt");
+    SceneNode* scene8a = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene8a.txt");
+    SceneNode* scene8b = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/scene8b.txt");
+    SceneNode* end = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/dating/ending.txt");
 
 
 
