@@ -23,7 +23,7 @@ bool InputText::validOptions(const char& option){
    if(option == 'a' || option == 'A'){
        return true;
    }
-   if(option == 'b'|| option == 'B'){
+   else if(option == 'b'|| option == 'B'){
        return true;
    }
    return false;
