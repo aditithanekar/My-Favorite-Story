@@ -1,3 +1,4 @@
+#pragma once
 #include "Genre.h"
 
 class Dating:public Genre

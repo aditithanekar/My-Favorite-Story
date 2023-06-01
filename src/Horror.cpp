@@ -12,7 +12,7 @@ Horror::~Horror(){
 
 void Horror::setupScenes(){
     SceneNode* curr = nullptr;
-    root = new SceneNode("/home/csmajs/rwong095/final-project-kchau047-rwong095-spun003-athan014/storyFiles/scene0.txt");
+    root = new SceneNode("storyFiles/scene0.txt");
     //no choice
     root->choiceA = new SceneNode("/home/csmajs/rwong095/final-project-kchau047-rwong095-spun003-athan014/storyFiles/horror/scene1.txt");
     //no choice
@@ -65,12 +65,12 @@ void Horror::playScene(){
     OutputText *output = new OutputText(); 
     //InputText *input = new InputText();
 
-    output->displayScene(curr); //scene 0
+    displayScene(curr->scene); //scene 0
     curr = curr->choiceA;
-    output->displayScene(curr); //scene 1
+    displayScene(curr->scene); //scene 1
     curr = curr->choiceA;
     SceneNode* repeatNode = curr; //scene 1.5
-    output->displayScene(curr);
+    displayScene(curr->scene);
 
     /* char in;
     /char choice;

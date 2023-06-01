@@ -1,5 +1,5 @@
 #include "../headers/Dating.h"
-//#include "../headers/InputText.h"
+#include "../headers/InputText.h"
 
 Dating::Dating()
 {
@@ -34,7 +34,7 @@ Dating::~Dating()
 
 void Dating::setupScenes()
 {
-    SceneNode* scene1 = new SceneNode("scene1.txt");
+    SceneNode* scene1 = new SceneNode("../storyfiles/dating/scene1.txt");
     SceneNode* scene2a = new SceneNode("scene2a.txt");
     SceneNode* scene2b = new SceneNode("scene2b.txt");
     SceneNode* scene3a = new SceneNode("scene3a.txt");
@@ -115,7 +115,7 @@ void Dating::playScene()
 {
     //first print welcome scene 0
     //ADD THIS HERE before scene1
-    char inputChar;
+    // char inputChar;
 
 
     SceneNode* currentSceneNode = root;
@@ -123,7 +123,7 @@ void Dating::playScene()
     {
         InputText input;
         displayScene(currentSceneNode->scene);    
-        input.setUserInput(inputChar);
+        input.setUserInput();
 
         if(input.getUserInput() == 'A' || input.getUserInput() =='a')
         {
