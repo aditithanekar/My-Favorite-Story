@@ -134,5 +134,7 @@ void Dating::playScene()
             currentSceneNode = currentSceneNode->choiceB;
         }
         
-    }    
+    } 
+    return;  
+    
 }

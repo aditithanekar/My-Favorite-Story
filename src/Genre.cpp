@@ -20,7 +20,7 @@ void Genre::displayScene(Scene* currScene)
 
     string str = currScene->getText();
     while(str != ""){
-        output->printingText(str,0);
+        output->printingText(str,25);
         str = currScene->getText();
     }
 }
