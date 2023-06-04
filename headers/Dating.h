@@ -6,6 +6,7 @@ class Dating:public Genre
     public: 
         Dating();
         ~Dating();
+        void destructDating(SceneNode* current);
         void playScene();
         void setupScenes();
         SceneNode* getRoot()

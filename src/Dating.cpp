@@ -1,4 +1,5 @@
 #include "../headers/Dating.h"
+#include "../headers/Genre.h"
 #include "../headers/InputText.h"
 
 Dating::Dating()
@@ -8,7 +9,9 @@ Dating::Dating()
 }
 Dating::~Dating()
 {
-    //Do i delete all of these...?
+    destructDating(root);
+    root = nullptr;
+    // //Do i delete all of these...?
     // delete end;
     // delete scene8b;
     // delete scene8a;
@@ -30,6 +33,23 @@ Dating::~Dating()
     // delete scene2b;
     // delete scene2a;
     // delete scene1;
+}
+void Dating::destructDating(SceneNode* current)
+{
+    if(current!=nullptr)
+    {
+        if(current->choiceA!=nullptr)
+        {
+            destructDating(current->choiceA);
+        }
+        if(current->choiceB!=nullptr)
+        {
+            destructDating(current->choiceB);
+        }
+        delete current->scene;
+        delete current;
+        current = nullptr;
+    }
 }
 
 void Dating::setupScenes()
