@@ -8,8 +8,9 @@ add_library(simpleLibrary
   Vanilla.cpp
   Mint.cpp
   InputText.cpp
+  Horror.cpp
   main.cpp
-)
+  )
 
 add_executable(runMain
   Genre.cpp

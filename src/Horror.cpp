@@ -1,13 +1,37 @@
 #include "../headers/Horror.h"
+#include "../headers/InputText.h"
 
-Horror::Horror(/* args */){
+Horror::Horror(){
     genreName = "Horror";
     failCase = nullptr;
     dollDist = 3;
 }
 
 Horror::~Horror(){
+    delete failCase;
+    SceneNode * curr = root->choiceA->choiceA;
+    
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceB->choiceB; //7
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceB->choiceA; //6a
+    
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceB; //6
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceA; //5a
 
+    delete curr->choiceB->choiceB->choiceB->choiceB; //5
+    delete curr->choiceB->choiceB->choiceB->choiceA; //4a
+
+    delete curr->choiceB->choiceB->choiceB; //4
+    delete curr->choiceB->choiceB->choiceA; //3a
+
+    delete curr->choiceB->choiceB; //3
+    delete curr->choiceB->choiceA; //2a
+    
+    delete curr->choiceB; //2
+    delete curr->choiceA; //1.5a
+
+    delete curr; //scene 1.5
+    delete root->choiceA; //scene 1
+    delete root; //scene 0
 }
 
 void Horror::setupScenes(){
@@ -61,30 +85,89 @@ void Horror::setupScenes(){
 }
 
 void Horror::playScene(){
+    setupScenes();
     SceneNode* curr = root; 
-    OutputText *output = new OutputText(); 
-    //InputText *input = new InputText();
 
     displayScene(curr->scene); //scene 0
     curr = curr->choiceA;
     displayScene(curr->scene); //scene 1
-    curr = curr->choiceA;
-    SceneNode* repeatNode = curr; //scene 1.5
-    displayScene(curr->scene);
+    curr = curr->choiceA; //scene 1.5 (repeatNode)
 
-    /* char in;
-    /char choice;
-    cin >> in;
-    input->setUserInput(in);
-    while(!input->validOptions(option,2)){ //ask again if not valid
-       cin >> in;
-       input->setUserInput(in);
+    OutputText *output = new OutputText(); 
+
+    string printDist = 
+    "              -----"    "\n"            
+    "        ---------------"     "\n"
+    "    -----------------------""\n"
+    "    ----               ----""\n"
+    "    ----               ----""\n"
+    "                    ----""\n"
+    "                -----""\n"
+    "                    ----""\n"
+    "                       ----""\n"
+    "    ----               ----""\n"
+    "    ----               ----""\n"
+    "    ----               ----""\n"
+    "      ----           ----"   "\n"   
+    "         -------------"     "\n"
+    "             -----""\n";
+    output->printingText(printDist,100);
+
+    while(curr != nullptr && dollDist > 0) {
+        displayScene(curr->scene);  
+        
+        InputText inputObject;  
+        inputObject.setUserInput();
+
+        if(inputObject.getUserInput() == 'A' || inputObject.getUserInput() =='a') {
+            curr = curr->choiceA;
+            displayScene(curr->scene);
+            --dollDist;
+
+            if(dollDist == 2){
+                printDist = 
+                "              -----"        "\n"           
+                "        ---------------"     "\n" 
+                "    -----------------------""\n"
+                "    ----               ----""\n"
+                "    ----               ----""\n"
+                "                    ----""\n"
+                "                -----""\n"
+                "            ----""\n"
+                "       ----""\n"
+                "    ----""\n"
+                "    ----""\n"
+                "    ----""\n"
+                "    ----------------------""\n"
+                "    ----------------------""\n";
+                output->printingText(printDist,100);
+            }else if(dollDist == 1){
+                printDist = 
+                "           ----"      "\n"            
+                "        --------"    "\n"
+                "    ------------""\n"
+                "    ----    ----""\n"
+                "    ----    ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "    ----------------------""\n"
+                "    ----------------------""\n";
+                output->printingText(printDist,100);
+            }
+            setupScenes();
+            curr = root->choiceA->choiceA;
+        }
+        else if(inputObject.getUserInput() == 'B' || inputObject.getUserInput() =='b') {
+            curr = curr->choiceB;
+        }
+        
+    }    
+    if(dollDist <= 0){
+        displayScene(failCase->scene);
     }
-    input->getUserInput;
-    if() */
-
-    
-    
-
-    //if(curr->choiceB == nullptr) curr->repeatNode
 }

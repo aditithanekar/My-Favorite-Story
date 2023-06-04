@@ -11,6 +11,7 @@ add_executable(runAllTests
   testPlayer.cpp
   VanillaTest.cpp
   MintTest.cpp
+  horrorTests.cpp
   DatingTests.cpp
 )
 
