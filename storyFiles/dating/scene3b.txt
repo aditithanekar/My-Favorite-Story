@@ -1,4 +1,5 @@
-Narrator ascii graphic appears (talking to you)
-
-Good choice, before you leave they mention that they were feeling the same way. Now it looks like you can go on that solo hike carefree! 
-(Press A or B to continue)
+     __                       __%
+      \   \  O   -    o    /   / %
+       \   \                /    /%
+Good choice, before you leave they mention that they were feeling the same way. Now it looks like you can go on that solo hike carefree!%%
+(Press A or B to continue)%

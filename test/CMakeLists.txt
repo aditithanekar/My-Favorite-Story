@@ -12,6 +12,7 @@ add_executable(runAllTests
   VanillaTest.cpp
   MintTest.cpp
   horrorTests.cpp
+  DatingTests.cpp
 )
 
 target_link_libraries(runAllTests gtest gtest_main)

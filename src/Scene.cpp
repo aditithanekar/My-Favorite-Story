@@ -13,7 +13,9 @@ Scene::Scene(string fileName){
     textIndex = 0;
     totalTexts = 0;
     //for item in fin, populate array, increment totalTexts
-    ifstream fin(fileName);
+    ifstream fin;
+    fin.open(fileName);
+
     if(!fin.is_open()){
         throw runtime_error(fileName + " file is not open.");
     }

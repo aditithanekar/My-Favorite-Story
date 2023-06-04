@@ -1,6 +1,8 @@
-A: (get to know them better)
-So you guys begin chatting, sharing your funny life stories, childhood, and now this person is really starting to make you feel comfy. They feel your pain, they understand you well and make you laugh hard enough to make your stomach hurt. But you’ve just met them today. How much can you even trust someone you’ve just met? 
-{narrator appears}
-Do you:
-Ask for their number so you can meet again?
-Simply say bye and part ways
+So you guys begin chatting, sharing your funny life stories, childhood, and now this person is really starting to make you feel comfy. They feel your pain, they understand you well and make you laugh hard enough to make your stomach hurt. But you’ve just met them today. How much can you even trust someone you’ve just met?%%
+     __                       __%
+      \   \  O   -    o    /   / %
+       \   \                /    /%%
+Do you:%
+A: Ask for their number so you can meet again?%
+B: Simply say bye and part ways%
+Select an option: %
