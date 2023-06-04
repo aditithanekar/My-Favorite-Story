@@ -5,7 +5,7 @@ private:
     int dollDist;
     SceneNode* failCase;
 public:
-    Horror(/* args */);
+    Horror();
     ~Horror();
     void setupScenes();
     void playScene();
