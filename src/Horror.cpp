@@ -1,4 +1,5 @@
 #include "../headers/Horror.h"
+#include "../headers/InputText.h"
 
 Horror::Horror(){
     genreName = "Horror";
@@ -71,72 +72,71 @@ void Horror::playScene(){
     OutputText *output = new OutputText(); 
 
     string printDist = 
-    "            -----                   
-            ---------------      
-        -----------------------
-        ----               ----
-        ----               ----
-                        ----
-                    -----
-                        ----
-                           ----
-        ----               ----
-        ----               ----
-        ----               ----
-          ----           ----      
-             -------------     
-                 -----             "
+    "              -----"    "\n"            
+    "        ---------------"     "\n"
+    "    -----------------------""\n"
+    "    ----               ----""\n"
+    "    ----               ----""\n"
+    "                    ----""\n"
+    "                -----""\n"
+    "                    ----""\n"
+    "                       ----""\n"
+    "    ----               ----""\n"
+    "    ----               ----""\n"
+    "    ----               ----""\n"
+    "      ----           ----"   "\n"   
+    "         -------------"     "\n"
+    "             -----""\n";
     output->printingText(printDist,100);
-
-   char input;
 
     while(curr != nullptr && dollDist > 0) {
         displayScene(curr->scene);  
         
         InputText inputObject;  
-        inputObject.setUserInput(input);
+        inputObject.setUserInput();
 
         if(inputObject.getUserInput() == 'A' || inputObject.getUserInput() =='a') {
             curr = curr->choiceA;
             displayScene(curr->scene);
-            curr = curr->choiceA;
             --dollDist;
 
             if(dollDist == 2){
                 printDist = 
-                "            -----                   
-                        ---------------      
-                    -----------------------
-                    ----               ----
-                    ----               ----
-                                    ----
-                                -----
-                            ----
-                        ----
-                    ----
-                    ----
-                    ----
-                    ----------------------
-                    ----------------------    "
+                "              -----"        "\n"           
+                "        ---------------"     "\n" 
+                "    -----------------------""\n"
+                "    ----               ----""\n"
+                "    ----               ----""\n"
+                "                    ----""\n"
+                "                -----""\n"
+                "            ----""\n"
+                "       ----""\n"
+                "    ----""\n"
+                "    ----""\n"
+                "    ----""\n"
+                "    ----------------------""\n"
+                "    ----------------------""\n";
                 output->printingText(printDist,100);
             }else if(dollDist == 1){
                 printDist = 
-                "           ----                  
-                        --------    
-                    ------------
-                    ----    ----
-                    ----    ----
-                            ----
-                            ----
-                            ----
-                            ----
-                            ----
-                            ----
-                            ----
-                    ----------------------
-                    ----------------------    "
+                "           ----"      "\n"            
+                "        --------"    "\n"
+                "    ------------""\n"
+                "    ----    ----""\n"
+                "    ----    ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "            ----""\n"
+                "    ----------------------""\n"
+                "    ----------------------""\n";
                 output->printingText(printDist,100);
             }
+            setupScenes();
+            curr = root->choiceA->choiceA;
         }
         else if(inputObject.getUserInput() == 'B' || inputObject.getUserInput() =='b') {
             curr = curr->choiceB;
@@ -144,6 +144,6 @@ void Horror::playScene(){
         
     }    
     if(dollDist <= 0){
-        displayScene(failCase);
+        displayScene(failCase->scene);
     }
 }

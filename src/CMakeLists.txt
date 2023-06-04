@@ -8,6 +8,7 @@ add_library(simpleLibrary
   Vanilla.cpp
   Mint.cpp
   InputText.cpp
+  Horror.cpp
 )
 
 find_library(M_LIB m)
