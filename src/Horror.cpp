@@ -82,8 +82,8 @@ void Horror::setupScenes(){
     
     //failCase only accesed from playScene()
     failCase = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/horror/scene8.txt");
-    delete curr;
-    delete repeatNode;
+    // delete curr;
+    // delete repeatNode;
     // curr = nullptr;
     // repeatNode = nullptr;
 }
@@ -116,8 +116,15 @@ void Horror::playScene(){
     "         -------------"     "\n"
     "             -----""\n";
     output->printingText(printDist,0);
-
+    int findLastScene = 0;
     while(curr != nullptr && dollDist > 0) {
+        
+        if(findLastScene == 6)
+        {
+            displayScene(curr->scene);
+            break;
+        }
+        
         displayScene(curr->scene);  
         
         InputText inputObject;  
@@ -167,10 +174,11 @@ void Horror::playScene(){
             curr = root->choiceA->choiceA;
         }
         else if(inputObject.getUserInput() == 'B' || inputObject.getUserInput() =='b') {
+            findLastScene++;
             curr = curr->choiceB;
         }
         
-    }    
+    }
     if(dollDist <= 0){
         displayScene(failCase->scene);
     }
