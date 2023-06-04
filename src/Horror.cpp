@@ -8,7 +8,30 @@ Horror::Horror(){
 }
 
 Horror::~Horror(){
+    delete failCase;
+    SceneNode * curr = root->choiceA->choiceA;
+    
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceB->choiceB; //7
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceB->choiceA; //6a
+    
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceB; //6
+    delete curr->choiceB->choiceB->choiceB->choiceB->choiceA; //5a
 
+    delete curr->choiceB->choiceB->choiceB->choiceB; //5
+    delete curr->choiceB->choiceB->choiceB->choiceA; //4a
+
+    delete curr->choiceB->choiceB->choiceB; //4
+    delete curr->choiceB->choiceB->choiceA; //3a
+
+    delete curr->choiceB->choiceB; //3
+    delete curr->choiceB->choiceA; //2a
+    
+    delete curr->choiceB; //2
+    delete curr->choiceA; //1.5a
+
+    delete curr; //scene 1.5
+    delete root->choiceA; //scene 1
+    delete root; //scene 0
 }
 
 void Horror::setupScenes(){
@@ -62,6 +85,7 @@ void Horror::setupScenes(){
 }
 
 void Horror::playScene(){
+    setupScenes();
     SceneNode* curr = root; 
 
     displayScene(curr->scene); //scene 0
