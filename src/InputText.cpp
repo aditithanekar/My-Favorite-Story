@@ -13,7 +13,7 @@ char InputText::getUserInput(){
 void InputText::setUserInput(){
    cin >> option;
    while(validOptions(option) ==  false){
-       cout << "Please put a Valid Option" << endl;
+       cout << "Please select a valid option" << endl;
        cin >> option;
    }
 }
@@ -23,7 +23,7 @@ bool InputText::validOptions(const char& option){
    if(option == 'a' || option == 'A'){
        return true;
    }
-   if(option == 'b'|| option == 'B'){
+   else if(option == 'b'|| option == 'B'){
        return true;
    }
    return false;

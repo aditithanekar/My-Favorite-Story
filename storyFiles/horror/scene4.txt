@@ -1,7 +1,8 @@
-You continue looking for a solution. The salt should keep the doll back. After 25 minutes of digging, you come across a conspicuous-looking black notebook. Flipping through it, you realize it’s all your parent’s research on this doll. Maybe it has a solution! 
-You start flipping through the notebook when you see your salt line through the corner of your eye. It’s wavering. What do you do next?
-[ascii graphics of narrator appear]
-“What do you do next?”
-Choice A: Continue flipping through the notebook. The salt line should hold for another few minutes.
-Choice B: Look for an escape. You can look through the notebook later. 
-Select an option: 
+You continue looking for a solution. The salt should keep the doll back.%
+After 25 minutes of digging, you come across a conspicuous-looking black notebook. Flipping through it, you realize it’s all your parent’s research on this doll. Maybe it has a solution! You start flipping through the notebook when you see your salt line through the corner of your eye. It’s wavering.%%
+     __                       __%
+      \   \  O   -    o    /   / %
+       \   \                /    / “What do you do next?”%
+Choice A: Continue flipping through the notebook. The salt line should hold for another few minutes.%
+Choice B: Look for an escape. You can look through the notebook later.%
+Select an option: %
