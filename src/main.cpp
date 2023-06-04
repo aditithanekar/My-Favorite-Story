@@ -91,7 +91,7 @@ void playGame(string inputGenre){
     }
     else{
         Horror userGenre;
-        userGenre.setupScenes();
+        // userGenre.setupScenes();
         userGenre.playScene();
     }
 }

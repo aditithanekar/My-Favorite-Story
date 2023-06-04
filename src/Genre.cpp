@@ -16,11 +16,12 @@ string Genre::getGenreName(){
 //this function is here to print the scene only!
 void Genre::displayScene(Scene* currScene)
 {
-    OutputText *output = new OutputText(); 
+    OutputText output; 
 
     string str = currScene->getText();
     while(str != ""){
-        output->printingText(str,25);
+        output.printingText(str,0);
         str = currScene->getText();
     }
+    //delete 
 }
