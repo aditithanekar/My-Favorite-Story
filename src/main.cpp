@@ -20,13 +20,12 @@ void printPlayAgainMenu();
 void playGame(string inputGenre);
 
 int main(){
-
-    InputText genreInput;
     printGenreMenu();
+    InputText genreInput;
     genreInput.setUserInput();
     cout << endl;
-    InputText characterInput;
     printPlayerMenu();
+    InputText characterInput;
     characterInput.setUserInput();
     cout << endl;
     if(characterInput.getUserInput() == 'a' || characterInput.getUserInput() == 'A'){
@@ -38,23 +37,28 @@ int main(){
 
     if(genreInput.getUserInput() == 'a' || genreInput.getUserInput() == 'A'){
         playGame("Dating");
-        InputText playAgain;
         printPlayAgainMenu();
+        InputText playAgain;
         playAgain.setUserInput();
         cout << endl;
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             playGame("Dating");
+            printPlayAgainMenu();
+            playAgain.setUserInput();
+            cout << endl;
         }
     }
-
     else {
         playGame("Horror");
-        InputText playAgain;
         printPlayAgainMenu();
+        InputText playAgain;
         playAgain.setUserInput();
         cout << endl;
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             playGame("Horror");
+            printPlayAgainMenu();
+            playAgain.setUserInput();
+            cout << endl;
         }
     }  
     return 0;
@@ -91,7 +95,6 @@ void playGame(string inputGenre){
     }
     else{
         Horror userGenre;
-        // userGenre.setupScenes();
         userGenre.playScene();
     }
 }

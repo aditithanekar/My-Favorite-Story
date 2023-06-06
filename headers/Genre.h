@@ -18,9 +18,7 @@ struct SceneNode
     }
 };
 class Genre{
-
     protected:
-        
         string genreName;
         SceneNode* root;
     public:
