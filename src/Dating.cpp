@@ -111,7 +111,7 @@ void Dating::setupScenes()
     scene8b->choiceB = end;
     
 }
-void Dating::playScene()
+void Dating::playScene(Player *userCharacter)
 {
     //first print welcome scene 0
     //ADD THIS HERE before scene1

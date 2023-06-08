@@ -84,7 +84,7 @@ void Horror::setupScenes(){
     failCase = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/horror/scene8.txt");
 }
 
-void Horror::playScene(){
+void Horror::playScene(Player *userCharacter){
     setupScenes();
     SceneNode* curr = root; 
 
