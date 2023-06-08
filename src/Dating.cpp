@@ -9,47 +9,50 @@ Dating::Dating()
 }
 Dating::~Dating()
 {
-    destructDating(root);
+    deleteDanglingPtrs(root->choiceB->choiceB->choiceB); //5bb
+    deleteDanglingPtrs(root->choiceB->choiceB->choiceA); //5ba
+    deleteDanglingPtrs(root->choiceB->choiceB); //4b
+
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceB->choiceB); //6bb
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceB->choiceA); //6b
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceB); //5ab
+    
+
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB->choiceB->choiceB->choiceB); //8b
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB->choiceB->choiceB->choiceA); //8a
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB->choiceB->choiceB);//7ab
+
+
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB->choiceB->choiceA->choiceB); //end sub
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB->choiceB->choiceA); //7aa
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB->choiceB); //6a
+
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceA); //transa
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA->choiceB); //transb
+    deleteDanglingPtrs(root->choiceB->choiceA->choiceA); //5aa
+
+    deleteDanglingPtrs(root->choiceB->choiceA); //4a
+
+    deleteDanglingPtrs(root->choiceA->choiceA); //3a
+    deleteDanglingPtrs(root->choiceA->choiceB); //3b
+
+    deleteDanglingPtrs(root->choiceA); //2a
+    deleteDanglingPtrs(root->choiceB); //2b
+
+    deleteDanglingPtrs(root); //1a
     root = nullptr;
-    // //Do i delete all of these...?
-    // delete end;
-    // delete scene8b;
-    // delete scene8a;
-    // delete scene7ab;
-    // delete scene7aa;
-    // delete scene6bb;
-    // delete scene6b;
-    // delete scene6a;
-    // delete scene5bb;
-    // delete scene5ba;
-    // delete scene5ab;
-    // delete scene5aatransitionb;
-    // delete scene5aatransitiona;
-    // delete scene5;
-    // delete scene4b;
-    // delete scene4a;
-    // delete scene3b;
-    // delete scene3a;
-    // delete scene2b;
-    // delete scene2a;
-    // delete scene1;
 }
-void Dating::destructDating(SceneNode* current)
+
+void Dating::deleteDanglingPtrs(SceneNode* toDelete)
 {
-    if(current!=nullptr)
+    if(toDelete!=nullptr)
     {
-        if(current->choiceA!=nullptr)
-        {
-            destructDating(current->choiceA);
-        }
-        if(current->choiceB!=nullptr)
-        {
-            destructDating(current->choiceB);
-        }
-        delete current->scene;
-        delete current;
-        current = nullptr;
+        toDelete->choiceA = nullptr;
+        toDelete->choiceB = nullptr;
+        delete toDelete;
+        toDelete = nullptr;
     }
+
 }
 
 void Dating::setupScenes()
@@ -127,8 +130,10 @@ void Dating::setupScenes()
 
     scene8a->choiceA = end;
     scene8a->choiceB = end;
-    scene8b->choiceA = end;
+    scene8b->choiceA = end; 
     scene8b->choiceB = end;
+    end->choiceA = nullptr;
+    end ->choiceB = nullptr;
     
 }
 void Dating::playScene()
@@ -152,9 +157,8 @@ void Dating::playScene()
         else if(input.getUserInput() == 'B' || input.getUserInput() =='b')
         {
             currentSceneNode = currentSceneNode->choiceB;
-        }
-        
-    } 
+        } 
+    }
     return;  
     
 }
