@@ -43,6 +43,8 @@ int main(){
         playAgain.setUserInput();
         cout << endl;
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
+            printPlayAgainMenu();
+            playAgain.setUserInput();
             playGame("Dating");
         }
     }
@@ -54,6 +56,8 @@ int main(){
         playAgain.setUserInput();
         cout << endl;
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
+            printPlayAgainMenu();
+            playAgain.setUserInput();
             playGame("Horror");
         }
     }  
