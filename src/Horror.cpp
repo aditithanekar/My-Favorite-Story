@@ -36,30 +36,8 @@ void Horror::deleteAll(){
 
 Horror::~Horror(){
     deleteAll();
-    // delete failCase;
-    // SceneNode * curr = root->choiceA->choiceA;
-    
-    // delete curr->choiceB->choiceB->choiceB->choiceB->choiceB->choiceB; //7
-    // delete curr->choiceB->choiceB->choiceB->choiceB->choiceB->choiceA; //6a
-    
-    // delete curr->choiceB->choiceB->choiceB->choiceB->choiceB; //6
-    // delete curr->choiceB->choiceB->choiceB->choiceB->choiceA; //5a
-
-    // delete curr->choiceB->choiceB->choiceB->choiceB; //5
-    // delete curr->choiceB->choiceB->choiceB->choiceA; //4a
-
-    // delete curr->choiceB->choiceB->choiceB; //4
-    // delete curr->choiceB->choiceB->choiceA; //3a
-
-    // delete curr->choiceB->choiceB; //3
-    // delete curr->choiceB->choiceA; //2a
-    
-    // delete curr->choiceB; //2
-    // delete curr->choiceA; //1.5a
-
-    // delete curr; //scene 1.5
-    // delete root->choiceA; //scene 1
-    // delete root; //scene 0
+    root = nullptr;
+    failCase = nullptr;
 }
 
 void Horror::setupScenes(){
@@ -110,10 +88,6 @@ void Horror::setupScenes(){
     
     //failCase only accesed from playScene()
     failCase = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/horror/scene8.txt");
-    // delete curr;
-    // delete repeatNode;
-    // curr = nullptr;
-    // repeatNode = nullptr;
 }
 
 void Horror::playScene(){
@@ -152,7 +126,6 @@ void Horror::playScene(){
             displayScene(curr->scene);
             break;
         }
-        //cout << "here";
         displayScene(curr->scene); 
         
         InputText inputObject;  
@@ -182,7 +155,6 @@ void Horror::playScene(){
                 "    ----------------------""\n"
                 "    ----------------------""\n";
                 output->printingText(printDist,0);
-                //curr = root->choiceA->choiceA;
             }else if(dollDist == 1){
                 printDist = 
                 "           ----"      "\n"            
@@ -200,7 +172,6 @@ void Horror::playScene(){
                 "    ----------------------""\n"
                 "    ----------------------""\n";
                 output->printingText(printDist,0);
-                //curr = root->choiceA->choiceA;
             }
             deleteAll();
             setupScenes();
@@ -214,6 +185,5 @@ void Horror::playScene(){
     if(dollDist <= 0){
         displayScene(failCase->scene);
     }
-
     delete output;
 }

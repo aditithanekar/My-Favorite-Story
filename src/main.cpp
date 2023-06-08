@@ -24,10 +24,12 @@ int main(){
     InputText genreInput;
     genreInput.setUserInput();
     cout << endl;
+
     printPlayerMenu();
     InputText characterInput;
     characterInput.setUserInput();
     cout << endl;
+
     if(characterInput.getUserInput() == 'a' || characterInput.getUserInput() == 'A'){
         Vanilla userCharacter;
     }
@@ -41,6 +43,7 @@ int main(){
         InputText playAgain;
         playAgain.setUserInput();
         cout << endl;
+
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             playGame("Dating");
             printPlayAgainMenu();
@@ -54,6 +57,7 @@ int main(){
         InputText playAgain;
         playAgain.setUserInput();
         cout << endl;
+        
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             playGame("Horror");
             printPlayAgainMenu();

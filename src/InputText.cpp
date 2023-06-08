@@ -4,11 +4,9 @@
 #include <string>
 using namespace std;
 
-
 char InputText::getUserInput(){
    return option;
 }
-
 
 void InputText::setUserInput(){
    cin >> option;
@@ -17,7 +15,6 @@ void InputText::setUserInput(){
        cin >> option;
    }
 }
-
 
 bool InputText::validOptions(const char& option){
    if(option == 'a' || option == 'A'){

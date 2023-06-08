@@ -19,6 +19,7 @@ Scene::Scene(string fileName){
     if(!fin.is_open()){
         throw runtime_error(fileName + " file is not open.");
     }
+
     string line = "";
     while(getline(fin,line)){
         text[totalTexts] = line;
@@ -28,9 +29,7 @@ Scene::Scene(string fileName){
     fin.close();
 }
 
-Scene::~Scene(){
-    
-}
+Scene::~Scene(){}
 
 string Scene::getText(){
     if(textIndex < totalTexts){
@@ -38,7 +37,6 @@ string Scene::getText(){
         return text[textIndex -1];
     }
     return "";
-    
 }
 
 
