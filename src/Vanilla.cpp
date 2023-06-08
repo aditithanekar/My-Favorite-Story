@@ -6,25 +6,25 @@ Vanilla::Vanilla(): Player("Vanilla"){};
 Vanilla::Vanilla(string inputName): Player(inputName){};
 
 string Vanilla::getHappy(){
-    return "Hurray! I'm so excited.";
+    return "\"Hurray! I'm so excited.\"\n";
 }
 
 string Vanilla::getSad(){
-    return "Aw man, this sucks.";
+    return "\"Aw man, this sucks.\"\n";
 }
 
 string Vanilla::getSurprised(){
-    return "Whoa! I didn't expect that.";
+    return "\"Whoa! I didn't expect that.\"\n";
 }
 
 string Vanilla::getDistressed(){
-    return "Ugh, this is terrible.";
+    return "\"Ugh, this is terrible.\"\n";
 }
 
 string Vanilla::getLonely(){
-    return "I feel so alone right now.";
+    return "\"I feel so alone right now.\"\n";
 }
 
 string Vanilla::getFear(){
-    return "AAAAAA!";
+    return "\"AAAAAA!\"\n";
 }

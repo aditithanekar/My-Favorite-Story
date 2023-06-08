@@ -93,7 +93,7 @@ void Horror::playScene(Player *userCharacter){
     displayScene(curr->scene); //scene 1
     curr = curr->choiceA; //scene 1.5 (repeatNode)
 
-    OutputText *output = new OutputText(); 
+    OutputText output = OutputText(); 
 
     string printDist = 
     "              -----"    "\n"            
@@ -111,10 +111,11 @@ void Horror::playScene(Player *userCharacter){
     "      ----           ----"   "\n"   
     "         -------------"     "\n"
     "             -----""\n";
-    output->printingText(printDist,100);
+    output.printingText(printDist,10);
 
     while(curr != nullptr && dollDist > 0) {
         displayScene(curr->scene);  
+        
         
         InputText inputObject;  
         inputObject.setUserInput();
@@ -123,6 +124,7 @@ void Horror::playScene(Player *userCharacter){
             curr = curr->choiceA;
             displayScene(curr->scene);
             --dollDist;
+            output.printingText(userCharacter->getFear(),10);
 
             if(dollDist == 2){
                 printDist = 
@@ -140,7 +142,8 @@ void Horror::playScene(Player *userCharacter){
                 "    ----""\n"
                 "    ----------------------""\n"
                 "    ----------------------""\n";
-                output->printingText(printDist,100);
+                output.printingText(printDist,10);
+                output.printingText(userCharacter->getSurprised(),10);
             }else if(dollDist == 1){
                 printDist = 
                 "           ----"      "\n"            
@@ -157,7 +160,8 @@ void Horror::playScene(Player *userCharacter){
                 "            ----""\n"
                 "    ----------------------""\n"
                 "    ----------------------""\n";
-                output->printingText(printDist,100);
+                output.printingText(printDist,10);
+                output.printingText(userCharacter->getDistressed(),10);
             }
             setupScenes();
             curr = root->choiceA->choiceA;
@@ -169,5 +173,6 @@ void Horror::playScene(Player *userCharacter){
     }    
     if(dollDist <= 0){
         displayScene(failCase->scene);
+        output.printingText(userCharacter->getSad(),10);
     }
 }
