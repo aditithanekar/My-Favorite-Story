@@ -35,22 +35,22 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 * Interface segregation: We have separate interfaces for our Dating and Horror genres, which helps us split them up and not have them depend on each other. For example, the Horror interface uses a dollDist variable which is not used in the RomCom interface because it does not need to use it even though they are both a genre. This is better than implementing a dollDist in Genre as a general Genre variable so that all the derived classes do not have to use it.
  
  ## Screenshots
- #### Menu
+ ### Menu
 <img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
-#### Horror Screens
-##### Introduction
+### Horror Screens <br />
+#### Introduction
 <p float="left">
-  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="900" />
+  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="500" />
 </p>
-#### Repeat Screen
+### Repeat Screen
 <p float="left">
-  <img src="diagrams/current-versions/horrorScreens/horrorRepeatScreen.png" width="900" />
+  <img src="diagrams/current-versions/horrorScreens/horrorRepeatScreen.png" width="500" />
 </p>
-##### Endings
+#### Endings
 <p float="left">
-  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="900" />
+  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="500" />
 </p>
-##### Endings
+#### Endings
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorGoodEnding.png" width="450" />
   <img src="diagrams/current-versions/horrorScreens/horrorBadEnding.png" width="450" />
