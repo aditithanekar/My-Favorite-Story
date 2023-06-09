@@ -47,5 +47,5 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > We tested our project using unit tests, and using the googletest submodule as a framework to validate the tests. In the folder called tests, we include all of our separate testing .cpp files for separate interfaces as well as a CMakeLists.txt file to have an executable to run all the tests. We run all the tests every time for our unit tests using the executable ./bin/runAllTests
  
