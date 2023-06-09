@@ -18,7 +18,7 @@ void Genre::displayScene(Scene* currScene)
     OutputText output;
     string str = currScene->getText();
     while(str != ""){
-        output->printingText(str,10);
+        output.printingText(str,10);
         str = currScene->getText();
     }
 }

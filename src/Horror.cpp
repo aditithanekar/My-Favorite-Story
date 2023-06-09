@@ -193,5 +193,4 @@ void Horror::playScene(Player *userCharacter){
     }else{
         output.printingText(userCharacter->getHappy(),10);
     }
-    delete output;
 }
