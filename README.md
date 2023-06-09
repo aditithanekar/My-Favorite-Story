@@ -39,9 +39,22 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 <img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
 #### Horror Screens
 ##### Introduction
-![IntroScreen](diagrams/current-versions/horrorScreens/horrorIntroScene.png "Introduction Screen") ![RepeatScreen](diagrams/current-versions/horrorScreens/horrorRepeatScreen.png "Fail Repeat Screen")
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="900" />
+</p>
+#### Repeat Screen
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorRepeatScreen.png" width="900" />
+</p>
 ##### Endings
-![GoodEnding](diagrams/current-versions/horrorScreens/horrorGoodEnding.png "Good Ending Screen") ![BadEnding](diagrams/current-versions/horrorScreens/horrorBadEnding.png "Bad Ending Screen")
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="900" />
+</p>
+##### Endings
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorGoodEnding.png" width="450" />
+  <img src="diagrams/current-versions/horrorScreens/horrorBadEnding.png" width="450" />
+</p>
 
  ## Installation/Usage
 To run **My Favorite Story**, clone this github repository on any linux based terminal with the capability of using git, cmake, and make. Run the following commands: 
