@@ -12,7 +12,7 @@ add_library(simpleLibrary
   main.cpp
   )
 
-add_executable(runMain
+add_executable(playMyFavoriteStory
   Genre.cpp
   Dating.cpp 
   Horror.cpp 
