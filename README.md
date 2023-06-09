@@ -35,7 +35,13 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 * Interface segregation: We have separate interfaces for our Dating and Horror genres, which helps us split them up and not have them depend on each other. For example, the Horror interface uses a dollDist variable which is not used in the RomCom interface because it does not need to use it even though they are both a genre. This is better than implementing a dollDist in Genre as a general Genre variable so that all the derived classes do not have to use it.
  
  ## Screenshots
+ #### Menu
 <img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
+#### Horror Screens
+##### Introduction
+![IntroScreen](diagrams/current-versions/horrorScreens/horrorIntroScene.png "Introduction Screen") ![RepeatScreen](diagrams/current-versions/horrorScreens/horrorRepeatScreen.png "Fail Repeat Screen")
+##### Endings
+![GoodEnding](diagrams/current-versions/horrorScreens/horrorGoodEnding.png "Good Ending Screen") ![BadEnding](diagrams/current-versions/horrorScreens/horrorBadEnding.png "Bad Ending Screen")
 
  ## Installation/Usage
 To run **My Favorite Story**, clone this github repository on any linux based terminal with the capability of using git, cmake, and make. Run the following commands: 
