@@ -57,12 +57,12 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 </p>
 
  ### Dating Screens
-  <br />
   
   #### Introduction
 <p float="left">
   <img src="diagrams/current-versions/datingScreens/datingIntroScreen.png" width="500" />
 </p>
+
   #### Two different emotions for Vanilla (left) and Mint (right)
 <p float="left">
   <img src="diagrams/current-versions/datingScreens/datingScreensTwoDifferentEmotionsVanilla.png" width="450" />
