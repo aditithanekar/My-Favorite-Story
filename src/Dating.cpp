@@ -113,28 +113,31 @@ void Dating::setupScenes()
 }
 void Dating::playScene(Player *userCharacter)
 {
-    //first print welcome scene 0
-    //ADD THIS HERE before scene1
-    // char inputChar;
+//first print welcome scene 0
+//ADD THIS HERE before scene1
+// char inputChar;
 
 
-    SceneNode* currentSceneNode = root;
-    while(currentSceneNode != nullptr)
-    {
-        InputText input;
-        displayScene(currentSceneNode->scene);    
-        input.setUserInput();
+OutputText output = OutputText();
+SceneNode* currentSceneNode = root;
+while(currentSceneNode != nullptr)
+{
+InputText input;
+displayScene(currentSceneNode->scene);
+input.setUserInput();
 
-        if(input.getUserInput() == 'A' || input.getUserInput() =='a')
-        {
-            currentSceneNode = currentSceneNode->choiceA;
-        }
-        else if(input.getUserInput() == 'B' || input.getUserInput() =='b')
-        {
-            currentSceneNode = currentSceneNode->choiceB;
-        }
-        
-    } 
-    return;  
-    
+
+if(input.getUserInput() == 'A' || input.getUserInput() =='a')
+{
+currentSceneNode = currentSceneNode->choiceA;
+output.printingText(userCharacter->getHappy(),10);
+}
+else if(input.getUserInput() == 'B' || input.getUserInput() =='b')
+{
+currentSceneNode = currentSceneNode->choiceB;
+output.printingText(userCharacter->getSad(),10);
+}
+}
+output.printingText(userCharacter->getHappy(),10);
+return;
 }
