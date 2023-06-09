@@ -45,7 +45,13 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+To run **My Favorite Story**, clone this github repository on any linux based terminal with the capability of using git, cmake, and make. Run the following commands: 
+   ```
+   cmake .
+   make
+   bin/playMyFavoriteStory
+   ```
+And voilà! You will be running our game, which will prompt you for your preferred genre and character personality. Have fun!
  ## Testing
- > We tested our project using unit tests, and using the googletest submodule as a framework to validate the tests. In the folder called tests, we include all of our separate testing .cpp files for separate interfaces as well as a CMakeLists.txt file to have an executable to run all the tests. We run all the tests every time for our unit tests using the executable ./bin/runAllTests
+We tested our project using unit tests, and using the googletest submodule as a framework to validate the tests. In the folder called tests, we include all of our separate testing .cpp files for separate interfaces as well as a CMakeLists.txt file to have an executable to run all the tests. We run all the tests every time for our unit tests using the executable ./bin/runAllTests
  
