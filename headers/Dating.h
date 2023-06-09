@@ -11,7 +11,7 @@ class Dating:public Genre
         void playScene();
         void setupScenes();
 
-        SceneNode* getRoot()
+        SceneNode* getRoot() const
         {
             if(root!=nullptr)
             {
