@@ -9,5 +9,6 @@ public:
     Horror();
     ~Horror();
     void playScene(Player *userCharacter);
+    void deleteAll();
     void setupScenes();
 };

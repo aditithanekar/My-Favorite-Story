@@ -8,9 +8,11 @@ TEST(HorrorTests, horrorConstructorTest) {
 TEST(HorrorTests, getNameTest) {
     Horror *horrorObject = new Horror();
     //EXPECT_STREQ(horrorObject->getGenreName(), "Horror");
+    delete horrorObject;
 }
 
 TEST(HorrorTests, playSceneTest){
     Horror *horrorObject = new Horror();
     //EXPECT_NO_THROW(horrorObject->playScene());
+    delete horrorObject;
 }

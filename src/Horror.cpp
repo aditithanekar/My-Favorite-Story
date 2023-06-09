@@ -7,7 +7,7 @@ Horror::Horror(){
     dollDist = 3;
 }
 
-Horror::~Horror(){
+void Horror::deleteAll(){
     delete failCase;
     SceneNode * curr = root->choiceA->choiceA;
     
@@ -32,6 +32,12 @@ Horror::~Horror(){
     delete curr; //scene 1.5
     delete root->choiceA; //scene 1
     delete root; //scene 0
+}
+
+Horror::~Horror(){
+    deleteAll();
+    root = nullptr;
+    failCase = nullptr;
 }
 
 void Horror::setupScenes(){
@@ -112,9 +118,15 @@ void Horror::playScene(Player *userCharacter){
     "         -------------"     "\n"
     "             -----""\n";
     output.printingText(printDist,10);
-
+    int findLastScene = 0;
     while(curr != nullptr && dollDist > 0) {
-        displayScene(curr->scene);  
+        
+        if(findLastScene == 6)
+        {
+            displayScene(curr->scene);
+            break;
+        }
+        displayScene(curr->scene); 
         
         
         InputText inputObject;  
@@ -124,8 +136,11 @@ void Horror::playScene(Player *userCharacter){
             curr = curr->choiceA;
             displayScene(curr->scene);
             --dollDist;
+          
             output.printingText(userCharacter->getFear(),10);
-
+            if(dollDist <= 0){
+                break;
+            }
             if(dollDist == 2){
                 printDist = 
                 "              -----"        "\n"           
@@ -163,18 +178,20 @@ void Horror::playScene(Player *userCharacter){
                 output.printingText(printDist,10);
                 output.printingText(userCharacter->getDistressed(),10);
             }
+            deleteAll();
             setupScenes();
             curr = root->choiceA->choiceA;
         }
         else if(inputObject.getUserInput() == 'B' || inputObject.getUserInput() =='b') {
+            findLastScene++;
             curr = curr->choiceB;
-        }
-        
-    }    
+        } 
+    }
     if(dollDist <= 0){
         displayScene(failCase->scene);
         output.printingText(userCharacter->getSad(),10);
     }else{
         output.printingText(userCharacter->getHappy(),10);
     }
+    delete output;
 }

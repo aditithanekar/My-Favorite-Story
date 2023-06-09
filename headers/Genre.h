@@ -7,16 +7,18 @@
 #include <string>
 using namespace std;
 
+struct SceneNode
+{
+    Scene* scene;
+    SceneNode* choiceA;
+    SceneNode* choiceB;
+    SceneNode(string filename): scene(new Scene(filename)), choiceA(nullptr), choiceB(nullptr){};
+    ~SceneNode(){
+        delete scene;
+    }
+};
 class Genre{
-
     protected:
-        struct SceneNode
-        {
-            Scene* scene;
-            SceneNode* choiceA;
-            SceneNode* choiceB;
-            SceneNode(string filename): scene(new Scene(filename)), choiceA(nullptr), choiceB(nullptr){};
-        };
         string genreName;
         SceneNode* root;
     public:
@@ -25,5 +27,4 @@ class Genre{
         virtual void playScene(Player *userCharacter) = 0;// this is the one for choices/playing
         virtual void setupScenes() = 0;
         void displayScene(Scene* currScene); 
-
 };
