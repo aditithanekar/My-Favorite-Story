@@ -58,6 +58,7 @@ int main(){
             playGame("Horror", userCharacter);
         }
     }  
+    delete userCharacter;
     return 0;
 }
 

@@ -174,5 +174,7 @@ void Horror::playScene(Player *userCharacter){
     if(dollDist <= 0){
         displayScene(failCase->scene);
         output.printingText(userCharacter->getSad(),10);
+    }else{
+        output.printingText(userCharacter->getHappy(),10);
     }
 }
