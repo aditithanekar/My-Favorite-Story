@@ -37,20 +37,20 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
  ## Screenshots
  ### Menu
 <img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
-### Horror Screens <br />
-#### Introduction
+ ### Horror Screens <br />
+ #### Introduction
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="500" />
 </p>
-### Repeat Screen
+ ### Repeat Screen
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorRepeatScreen.png" width="500" />
 </p>
-#### Endings
+ #### Endings
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="500" />
 </p>
-#### Endings
+ #### Endings
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorGoodEnding.png" width="450" />
   <img src="diagrams/current-versions/horrorScreens/horrorBadEnding.png" width="450" />
