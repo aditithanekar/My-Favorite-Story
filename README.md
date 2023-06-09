@@ -19,14 +19,14 @@ Some features we plan on providing include:
 ## User Interface Specification
 ### Navigation Diagram
 This navigation diagram represents how our screen layout changes from the main menu to choose your character and genre, and split into how the storylines change for the dating storyline on the left as well as the looping horror story on the right side.
->  <img src="diagrams/current-versions/navigationdiagram.jpg" alt="UMLdiag" width="900">
+<img src="diagrams/current-versions/navigationdiagram.jpg" alt="UMLdiag" width="900">
 
 ### Screen Layouts
 Click [here](https://docs.google.com/document/d/1xZE690FOioJzWJGLKPGApxL3kFQgQ7RXP86dCf6oQLs/edit?usp=sharing) to see our screen layout.
 
 ## Class Diagram
 This is a UML class diagram describing our abstract Genre and Player classes as well as our Scene main class. The inherited classes of the Genre are the Horror and RomCom classes and the inherited classes of the Player are our two characters names Vanilla and Mint.
-> <img src="diagrams/current-versions/updatedUML.jpg" alt="UMLdiag" width="900">
+<img src="diagrams/current-versions/updatedUML.jpg" alt="UMLdiag" width="900">
  
 ### SOLID Principles
 * Single Responsibility: We created new classes called the OutputText and inputText. These are now in charge of printing and taking in text respectfully, instead of the Scene class doing so. This makes it so the Scene class only has a single responsibility instead of three. This change helped us write better code because it divided up the general task of outputting and inputting text into their own interfaces rather than redundantly implementing them for each Genre class. This way, it can be used by all the other classes.
@@ -35,7 +35,50 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 * Interface segregation: We have separate interfaces for our Dating and Horror genres, which helps us split them up and not have them depend on each other. For example, the Horror interface uses a dollDist variable which is not used in the RomCom interface because it does not need to use it even though they are both a genre. This is better than implementing a dollDist in Genre as a general Genre variable so that all the derived classes do not have to use it.
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ ### Menu
+<img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
+
+ ### Horror Screens
+ 
+ #### Introduction
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="500" />
+</p>
+
+ #### Repeat Screen
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorRepeatScreen.png" width="500" />
+</p>
+ 
+ #### Endings: Success (left), Failure (right)
+<p float="left">
+  <img src="diagrams/current-versions/horrorScreens/horrorGoodEnding.png" width="450" />
+  <img src="diagrams/current-versions/horrorScreens/horrorBadEnding.png" width="450" />
+</p>
+
+ ### Dating Screens
+  
+  #### Introduction
+<p float="left">
+  <img src="diagrams/current-versions/datingScreens/datingIntroScreen.png" width="500" />
+</p>
+
+  #### Two different emotions for Vanilla (left) and Mint (right)
+<p float="left">
+  <img src="diagrams/current-versions/datingScreens/datingScreensTwoDifferentEmotionsVanilla.png" width="450" />
+ <img src="diagrams/current-versions/datingScreens/datingScreensTwoDifferentEmotionsMint.png" width="450" />
+</p>
+ 
+ #### Endings: Sucess (top left), Failure (all remaining images)
+<p float="left">
+  <img src="diagrams/current-versions/datingScreens/datingGoodEnding.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingEnd4StalkerEnding.png" width="450" />
+</p>
+<p float="left">
+  <img src="diagrams/current-versions/datingScreens/datingDeclineInitialLoverBadEnding.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingend5IndependentPerson.png" width="450" />
+</p>
+
  ## Installation/Usage
 To run **My Favorite Story**, clone this github repository on any linux based terminal with the capability of using git, cmake, and make. Run the following commands: 
    ```
