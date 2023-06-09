@@ -8,6 +8,7 @@ private:
 public:
     Horror();
     ~Horror();
+    void deleteAll();
     void setupScenes();
     void playScene();
 };

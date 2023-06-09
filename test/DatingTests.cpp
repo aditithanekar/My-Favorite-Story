@@ -12,6 +12,7 @@ TEST(DatingTests, BeforeSetupCheckNullRoot)
    Dating dating = Dating();
    SceneNode* node = dating.getRoot();
    EXPECT_EQ(node, nullptr); 
+   delete node;
 }
 TEST(DatingTests, AfterSetupCheckRootSetup)
 {
@@ -19,6 +20,7 @@ TEST(DatingTests, AfterSetupCheckRootSetup)
    dating.setupScenes();
    SceneNode* node = dating.getRoot();
    EXPECT_NE(node, nullptr);
+   delete node;
 }
 TEST(DatingTests, AfterSetupCheckChoices)
 {
