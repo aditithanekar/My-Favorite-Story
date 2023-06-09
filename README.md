@@ -59,17 +59,17 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 </p>
   Two different emotions for Vanilla (left) and Mint (right)
 <p float="left">
-  <img src="datingScreensTwoDifferentEmotionsVanilla.png" width="450" />
- <img src="datingScreensTwoDifferentEmotionsMint.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingScreensTwoDifferentEmotionsVanilla.png" width="450" />
+ <img src="diagrams/current-versions/datingScreens/datingScreensTwoDifferentEmotionsMint.png" width="450" />
 </p>
 Endings: Sucess (top left), Failure (all remaining images)
 <p float="left">
-  <img src="datingGoodEnding.png" width="450" />
-  <img src="datingEnd4StalkerEnding.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingGoodEnding.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingEnd4StalkerEnding.png" width="450" />
 </p>
 <p float="left">
-  <img src="datingDeclineInitialLoverBadEnding.png" width="450" />
-  <img src="datingend5IndependentPerson.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingDeclineInitialLoverBadEnding.png" width="450" />
+  <img src="diagrams/current-versions/datingScreens/datingend5IndependentPerson.png" width="450" />
 </p>
 
  ## Installation/Usage
