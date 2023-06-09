@@ -48,10 +48,8 @@ int main(){
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             printPlayAgainMenu();
             playAgain.setUserInput();
-            playGame("Dating", userCharacter);
-            printPlayAgainMenu();
-            playAgain.setUserInput();
             cout << endl;
+            playGame("Dating", userCharacter);
         }
     }
     else {
@@ -64,10 +62,8 @@ int main(){
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             printPlayAgainMenu();
             playAgain.setUserInput();
-            playGame("Horror", userCharacter);
-            printPlayAgainMenu();
-            playAgain.setUserInput();
             cout << endl;
+            playGame("Horror", userCharacter);            
         }
     }  
     delete userCharacter;
