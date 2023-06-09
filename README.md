@@ -37,7 +37,8 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
  ## Screenshots
  ### Menu
 <img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
- Horror Screens <br />
+ ### Horror Screens
+ <br />
  Introduction
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorIntroScene.png" width="500" />
@@ -46,10 +47,29 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorRepeatScreen.png" width="500" />
 </p>
- Endings
+ Endings: Success (left), Failure (right)
 <p float="left">
   <img src="diagrams/current-versions/horrorScreens/horrorGoodEnding.png" width="450" />
   <img src="diagrams/current-versions/horrorScreens/horrorBadEnding.png" width="450" />
+</p>
+ ### Dating Screens
+  Introduction
+<p float="left">
+  <img src="diagrams/current-versions/datingScreens/datingIntroScene.png" width="500" />
+</p>
+  Two different emotions for Vanilla (left) and Mint (right)
+<p float="left">
+  <img src="datingScreensTwoDifferentEmotionsVanilla.png" width="450" />
+ <img src="datingScreensTwoDifferentEmotionsMint.png" width="450" />
+</p>
+Endings: Sucess (top left), Failure (all remaining images)
+<p float="left">
+  <img src="datingGoodEnding.png" width="450" />
+  <img src="datingEnd4StalkerEnding.png" width="450" />
+</p>
+<p float="left">
+  <img src="datingDeclineInitialLoverBadEnding.png" width="450" />
+  <img src="datingend5IndependentPerson.png" width="450" />
 </p>
 
  ## Installation/Usage
