@@ -17,7 +17,7 @@ using namespace std;
 void printGenreMenu();
 void printPlayerMenu();
 void printPlayAgainMenu();
-void playGame(string inputGenre);
+void playGame(string inputGenre, Player *character);
 
 int main(){
     printGenreMenu();
@@ -29,16 +29,17 @@ int main(){
     InputText characterInput;
     characterInput.setUserInput();
     cout << endl;
-
+  
+    Player* userCharacter;
     if(characterInput.getUserInput() == 'a' || characterInput.getUserInput() == 'A'){
-        Vanilla userCharacter;
+        userCharacter = new Vanilla();
     }
     else{
-        Mint userCharacter;
+        userCharacter = new  Mint();
     }
 
     if(genreInput.getUserInput() == 'a' || genreInput.getUserInput() == 'A'){
-        playGame("Dating");
+        playGame("Dating",userCharacter);
         printPlayAgainMenu();
         InputText playAgain;
         playAgain.setUserInput();
@@ -47,14 +48,14 @@ int main(){
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             printPlayAgainMenu();
             playAgain.setUserInput();
-            playGame("Dating");
+            playGame("Dating", userCharacter);
             printPlayAgainMenu();
             playAgain.setUserInput();
             cout << endl;
         }
     }
     else {
-        playGame("Horror");
+        playGame("Horror", userCharacter);
         printPlayAgainMenu();
         InputText playAgain;
         playAgain.setUserInput();
@@ -63,12 +64,13 @@ int main(){
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             printPlayAgainMenu();
             playAgain.setUserInput();
-            playGame("Horror");
+            playGame("Horror", userCharacter);
             printPlayAgainMenu();
             playAgain.setUserInput();
             cout << endl;
         }
     }  
+    delete userCharacter;
     return 0;
 }
 
@@ -95,14 +97,14 @@ void printPlayAgainMenu(){
     cout << "Please select an option: " << endl;
 }
 
-void playGame(string inputGenre){
+void playGame(string inputGenre, Player *character){
     if(inputGenre == "Dating"){
         Dating userGenre;
         userGenre.setupScenes();
-        userGenre.playScene();
+        userGenre.playScene(character);
     }
     else{
         Horror userGenre;
-        userGenre.playScene();
+        userGenre.playScene(character);
     }
 }

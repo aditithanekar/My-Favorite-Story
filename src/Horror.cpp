@@ -90,7 +90,7 @@ void Horror::setupScenes(){
     failCase = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/horror/scene8.txt");
 }
 
-void Horror::playScene(){
+void Horror::playScene(Player *userCharacter){
     setupScenes();
     SceneNode* curr = root; 
 
@@ -99,7 +99,7 @@ void Horror::playScene(){
     displayScene(curr->scene); //scene 1
     curr = curr->choiceA; //scene 1.5 (repeatNode)
 
-    OutputText *output = new OutputText(); 
+    OutputText output = OutputText(); 
 
     string printDist = 
     "              -----"    "\n"            
@@ -117,7 +117,7 @@ void Horror::playScene(){
     "      ----           ----"   "\n"   
     "         -------------"     "\n"
     "             -----""\n";
-    output->printingText(printDist,0);
+    output.printingText(printDist,10);
     int findLastScene = 0;
     while(curr != nullptr && dollDist > 0) {
         
@@ -128,6 +128,7 @@ void Horror::playScene(){
         }
         displayScene(curr->scene); 
         
+        
         InputText inputObject;  
         inputObject.setUserInput();
 
@@ -135,6 +136,8 @@ void Horror::playScene(){
             curr = curr->choiceA;
             displayScene(curr->scene);
             --dollDist;
+          
+            output.printingText(userCharacter->getFear(),10);
             if(dollDist <= 0){
                 break;
             }
@@ -154,7 +157,8 @@ void Horror::playScene(){
                 "    ----""\n"
                 "    ----------------------""\n"
                 "    ----------------------""\n";
-                output->printingText(printDist,0);
+                output.printingText(printDist,10);
+                output.printingText(userCharacter->getSurprised(),10);
             }else if(dollDist == 1){
                 printDist = 
                 "           ----"      "\n"            
@@ -171,7 +175,8 @@ void Horror::playScene(){
                 "            ----""\n"
                 "    ----------------------""\n"
                 "    ----------------------""\n";
-                output->printingText(printDist,0);
+                output.printingText(printDist,10);
+                output.printingText(userCharacter->getDistressed(),10);
             }
             deleteAll();
             setupScenes();
@@ -184,6 +189,9 @@ void Horror::playScene(){
     }
     if(dollDist <= 0){
         displayScene(failCase->scene);
+        output.printingText(userCharacter->getSad(),10);
+    }else{
+        output.printingText(userCharacter->getHappy(),10);
     }
     delete output;
 }

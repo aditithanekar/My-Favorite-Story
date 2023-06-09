@@ -136,10 +136,14 @@ void Dating::setupScenes()
     end ->choiceB = nullptr;
     
 }
-void Dating::playScene()
+void Dating::playScene(Player *userCharacter)
 {
+
     SceneNode *introScene = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/scene0.txt");
     displayScene(introScene->scene);
+    
+    OutputText output = OutputText();
+    
     SceneNode* currentSceneNode = root;
     while(currentSceneNode != nullptr)
     {
@@ -150,12 +154,15 @@ void Dating::playScene()
         if(input.getUserInput() == 'A' || input.getUserInput() =='a')
         {
             currentSceneNode = currentSceneNode->choiceA;
+            output.printingText(userCharacter->getHappy(),10);
         }
         else if(input.getUserInput() == 'B' || input.getUserInput() =='b')
         {
             currentSceneNode = currentSceneNode->choiceB;
+            output.printingText(userCharacter->getSad(),10);
         }       
     } 
+    output.printingText(userCharacter->getHappy(),10);
     delete introScene;
     introScene = nullptr;
     return;
