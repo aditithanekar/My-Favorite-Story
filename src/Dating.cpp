@@ -138,11 +138,8 @@ void Dating::setupScenes()
 }
 void Dating::playScene()
 {
-    //first print welcome scene 0
-    //ADD THIS HERE before scene1
-    // char inputChar;
-
-
+    SceneNode *introScene = new SceneNode("../final-project-kchau047-rwong095-spun003-athan014/storyFiles/scene0.txt");
+    displayScene(introScene->scene);
     SceneNode* currentSceneNode = root;
     while(currentSceneNode != nullptr)
     {
@@ -157,8 +154,9 @@ void Dating::playScene()
         else if(input.getUserInput() == 'B' || input.getUserInput() =='b')
         {
             currentSceneNode = currentSceneNode->choiceB;
-        } 
-    }
-    return;  
-    
+        }       
+    } 
+    delete introScene;
+    introScene = nullptr;
+    return;
 }
