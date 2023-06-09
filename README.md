@@ -37,6 +37,7 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
  ## Screenshots
  ### Menu
 <img src="diagrams/current-versions/menu.png" alt="UMLdiag" width="900">
+
  ### Horror Screens
  <br />
  Introduction
@@ -52,10 +53,12 @@ This is a UML class diagram describing our abstract Genre and Player classes as 
   <img src="diagrams/current-versions/horrorScreens/horrorGoodEnding.png" width="450" />
   <img src="diagrams/current-versions/horrorScreens/horrorBadEnding.png" width="450" />
 </p>
+
  ### Dating Screens
+  <br />
   Introduction
 <p float="left">
-  <img src="diagrams/current-versions/datingScreens/datingIntroScene.png" width="500" />
+  <img src="diagrams/current-versions/datingScreens/datingIntroScreen.png" width="500" />
 </p>
   Two different emotions for Vanilla (left) and Mint (right)
 <p float="left">
