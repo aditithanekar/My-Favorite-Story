@@ -7,7 +7,7 @@ Horror::Horror(){
     dollDist = 3;
 }
 
-Horror::~Horror(){
+void Horror::deleteAll(){
     delete failCase;
     SceneNode * curr = root->choiceA->choiceA;
     
@@ -32,6 +32,12 @@ Horror::~Horror(){
     delete curr; //scene 1.5
     delete root->choiceA; //scene 1
     delete root; //scene 0
+}
+
+Horror::~Horror(){
+    deleteAll();
+    root = nullptr;
+    failCase = nullptr;
 }
 
 void Horror::setupScenes(){
@@ -111,10 +117,16 @@ void Horror::playScene(){
     "      ----           ----"   "\n"   
     "         -------------"     "\n"
     "             -----""\n";
-    output->printingText(printDist,100);
-
+    output->printingText(printDist,0);
+    int findLastScene = 0;
     while(curr != nullptr && dollDist > 0) {
-        displayScene(curr->scene);  
+        
+        if(findLastScene == 6)
+        {
+            displayScene(curr->scene);
+            break;
+        }
+        displayScene(curr->scene); 
         
         InputText inputObject;  
         inputObject.setUserInput();
@@ -123,7 +135,9 @@ void Horror::playScene(){
             curr = curr->choiceA;
             displayScene(curr->scene);
             --dollDist;
-
+            if(dollDist <= 0){
+                break;
+            }
             if(dollDist == 2){
                 printDist = 
                 "              -----"        "\n"           
@@ -140,7 +154,7 @@ void Horror::playScene(){
                 "    ----""\n"
                 "    ----------------------""\n"
                 "    ----------------------""\n";
-                output->printingText(printDist,100);
+                output->printingText(printDist,0);
             }else if(dollDist == 1){
                 printDist = 
                 "           ----"      "\n"            
@@ -157,17 +171,19 @@ void Horror::playScene(){
                 "            ----""\n"
                 "    ----------------------""\n"
                 "    ----------------------""\n";
-                output->printingText(printDist,100);
+                output->printingText(printDist,0);
             }
+            deleteAll();
             setupScenes();
             curr = root->choiceA->choiceA;
         }
         else if(inputObject.getUserInput() == 'B' || inputObject.getUserInput() =='b') {
+            findLastScene++;
             curr = curr->choiceB;
-        }
-        
-    }    
+        } 
+    }
     if(dollDist <= 0){
         displayScene(failCase->scene);
     }
+    delete output;
 }

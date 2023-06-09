@@ -13,11 +13,12 @@ struct SceneNode
     SceneNode* choiceA;
     SceneNode* choiceB;
     SceneNode(string filename): scene(new Scene(filename)), choiceA(nullptr), choiceB(nullptr){};
+    ~SceneNode(){
+        delete scene;
+    }
 };
 class Genre{
-
     protected:
-        
         string genreName;
         SceneNode* root;
     public:

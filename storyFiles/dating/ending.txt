@@ -4,5 +4,5 @@
 * THE END! *%
 *          *%
   *      *%
-     * %
-(Press A or B)
+     * %%
+(Press A or B)%
