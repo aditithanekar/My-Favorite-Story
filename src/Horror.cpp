@@ -128,11 +128,11 @@ void Horror::playScene(Player *userCharacter){
         }
         displayScene(curr->scene); 
         
-        
         InputText inputObject;  
         inputObject.setUserInput();
 
         if(inputObject.getUserInput() == 'A' || inputObject.getUserInput() =='a') {
+            findLastScene = 0;
             curr = curr->choiceA;
             displayScene(curr->scene);
             --dollDist;

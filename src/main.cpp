@@ -44,6 +44,7 @@ int main(){
         InputText playAgain;
         playAgain.setUserInput();
         cout << endl;
+        playGame("Dating",userCharacter);
 
         while(playAgain.getUserInput() != 'b' && playAgain.getUserInput() != 'B'){
             printPlayAgainMenu();
